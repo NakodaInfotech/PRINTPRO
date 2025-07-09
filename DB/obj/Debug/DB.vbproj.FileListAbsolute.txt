@@ -1,0 +1,9 @@
+D:\VSS\PRINTPRO\DB\bin\Debug\DB.dll
+D:\VSS\PRINTPRO\DB\bin\Debug\DB.pdb
+D:\VSS\PRINTPRO\DB\bin\Debug\DB.xml
+D:\VSS\PRINTPRO\DB\obj\Debug\DB.vbprojResolveAssemblyReference.cache
+D:\VSS\PRINTPRO\DB\obj\Debug\DB.Resources.resources
+D:\VSS\PRINTPRO\DB\obj\Debug\DB.vbproj.GenerateResource.Cache
+D:\VSS\PRINTPRO\DB\obj\Debug\DB.dll
+D:\VSS\PRINTPRO\DB\obj\Debug\DB.xml
+D:\VSS\PRINTPRO\DB\obj\Debug\DB.pdb

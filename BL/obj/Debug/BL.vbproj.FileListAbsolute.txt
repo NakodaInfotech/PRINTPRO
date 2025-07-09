@@ -1,0 +1,15 @@
+D:\VSS\PRINTPRO\BL\bin\Debug\BL.dll
+D:\VSS\PRINTPRO\BL\bin\Debug\BL.pdb
+D:\VSS\PRINTPRO\BL\bin\Debug\BL.xml
+D:\VSS\PRINTPRO\BL\bin\Debug\DB.dll
+D:\VSS\PRINTPRO\BL\bin\Debug\Interop.Excel.dll
+D:\VSS\PRINTPRO\BL\bin\Debug\Interop.Microsoft.Office.Core.dll
+D:\VSS\PRINTPRO\BL\bin\Debug\stdole.dll
+D:\VSS\PRINTPRO\BL\bin\Debug\DB.pdb
+D:\VSS\PRINTPRO\BL\bin\Debug\DB.xml
+D:\VSS\PRINTPRO\BL\obj\Debug\BL.vbprojResolveAssemblyReference.cache
+D:\VSS\PRINTPRO\BL\obj\Debug\BL.Resources.resources
+D:\VSS\PRINTPRO\BL\obj\Debug\BL.vbproj.GenerateResource.Cache
+D:\VSS\PRINTPRO\BL\obj\Debug\BL.dll
+D:\VSS\PRINTPRO\BL\obj\Debug\BL.xml
+D:\VSS\PRINTPRO\BL\obj\Debug\BL.pdb
