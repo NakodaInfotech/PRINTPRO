@@ -904,6 +904,12 @@
       <DependentUpon>SaleReturnChallanReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Reports\Crystal Reports\Sale\Shipper Reports\ShipperReport_AMR1.vb">
+      <DependentUpon>ShipperReport_AMR1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Reports\Crystal Reports\Stock\StockRegisterRate.vb">
       <DependentUpon>StockRegisterRate.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -4310,6 +4316,10 @@
     <EmbeddedResource Include="Reports\Crystal Reports\Sale\Invoice\SaleReturnChallanReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>SaleReturnChallanReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Crystal Reports\Sale\Shipper Reports\ShipperReport_AMR1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ShipperReport_AMR1.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Crystal Reports\Stock\StockRegisterRate.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
