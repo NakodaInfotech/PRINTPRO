@@ -237,7 +237,10 @@ Public Class ItemMaster
             alParaval.Add(YearId)
             alParaval.Add(CHKBLOCKED.CheckState)
             alParaval.Add(CMBNAME.Text.Trim)
-
+            alParaval.Add(TXTBOXSIZE.Text.Trim)
+            alParaval.Add(TXTBUNDEL.Text.Trim)
+            alParaval.Add(TXTBOXQTY.Text.Trim)
+            alParaval.Add(TXTTRAYQTY.Text.Trim)
 
 
             Dim BOMSRNO As String = ""
@@ -553,7 +556,10 @@ Public Class ItemMaster
                         CHKBLOCKED.Checked = Convert.ToBoolean(dttable.Rows(0).Item("BLOCKED"))
                         CMBNAME.Text = Convert.ToString(DR("NAME"))
 
-
+                        TXTBOXSIZE.Text = Convert.ToString(DR("BOXSIZE"))
+                        TXTBUNDEL.Text = Convert.ToString(DR("BUNDEL"))
+                        TXTBOXQTY.Text = Val(DR("BOXQTY"))
+                        TXTTRAYQTY.Text = Val(DR("TRAYQTY"))
 
                         If DR("PROOFSEND") = 0 Then
                             CHKPROOFSEND.Checked = False
@@ -1288,4 +1294,9 @@ Public Class ItemMaster
             Throw ex
         End Try
     End Sub
+
+    Private Sub TXTBOXQTY_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TXTBOXQTY.KeyPress, TXTTRAYQTY.KeyPress
+        numdotkeypress(e, sender, Me)
+    End Sub
+
 End Class

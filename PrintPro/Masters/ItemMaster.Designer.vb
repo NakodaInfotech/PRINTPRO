@@ -80,34 +80,30 @@ Partial Class ItemMaster
         Me.txtremarks = New System.Windows.Forms.TextBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.txtrepeatlength = New System.Windows.Forms.TextBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtfonts = New System.Windows.Forms.TextBox()
-        Me.txtsizefoldingheight = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label31 = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
         Me.txtactualsizeheight = New System.Windows.Forms.TextBox()
         Me.txtsoftware = New System.Windows.Forms.TextBox()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.txtartist = New System.Windows.Forms.TextBox()
         Me.txtscreen = New System.Windows.Forms.TextBox()
-        Me.TXTMATERIALCODE = New System.Windows.Forms.TextBox()
         Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.txtlinks = New System.Windows.Forms.TextBox()
         Me.cmbcoordinator = New System.Windows.Forms.ComboBox()
-        Me.Label17 = New System.Windows.Forms.Label()
         Me.CMBNAME = New System.Windows.Forms.ComboBox()
         Me.Label41 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.CHK2DCODE = New System.Windows.Forms.CheckBox()
+        Me.txtsizefoldingheight = New System.Windows.Forms.TextBox()
         Me.CHKFOLDED = New System.Windows.Forms.CheckBox()
+        Me.Label31 = New System.Windows.Forms.Label()
         Me.CMBSIDE = New System.Windows.Forms.ComboBox()
         Me.Label29 = New System.Windows.Forms.Label()
+        Me.Label25 = New System.Windows.Forms.Label()
         Me.TXTKNIFE = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -115,15 +111,19 @@ Partial Class ItemMaster
         Me.txtups = New System.Windows.Forms.TextBox()
         Me.txtcutsize = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
+        Me.TXTMATERIALCODE = New System.Windows.Forms.TextBox()
         Me.cmbgrain = New System.Windows.Forms.ComboBox()
         Me.CMBPAPERSIZE = New System.Windows.Forms.ComboBox()
         Me.cmbdesign = New System.Windows.Forms.ComboBox()
+        Me.Label20 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.txtvarnish = New System.Windows.Forms.TextBox()
+        Me.txtlinks = New System.Windows.Forms.TextBox()
         Me.cmbmaterial = New System.Windows.Forms.ComboBox()
         Me.CMBPAPERGSM = New System.Windows.Forms.ComboBox()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
         Me.txtsizefoldingwidth = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -163,6 +163,14 @@ Partial Class ItemMaster
         Me.LineShape3 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Ep = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.TXTBUNDEL = New System.Windows.Forms.TextBox()
+        Me.Label42 = New System.Windows.Forms.Label()
+        Me.TXTBOXSIZE = New System.Windows.Forms.TextBox()
+        Me.Label43 = New System.Windows.Forms.Label()
+        Me.TXTTRAYQTY = New System.Windows.Forms.TextBox()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.TXTBOXQTY = New System.Windows.Forms.TextBox()
+        Me.Label45 = New System.Windows.Forms.Label()
         Me.BlendPanel1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
@@ -760,18 +768,22 @@ Partial Class ItemMaster
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.TabPage1.Controls.Add(Me.txtrepeatlength)
+        Me.TabPage1.Controls.Add(Me.TXTTRAYQTY)
+        Me.TabPage1.Controls.Add(Me.Label44)
+        Me.TabPage1.Controls.Add(Me.TXTBOXQTY)
+        Me.TabPage1.Controls.Add(Me.Label45)
+        Me.TabPage1.Controls.Add(Me.TXTBUNDEL)
+        Me.TabPage1.Controls.Add(Me.Label42)
+        Me.TabPage1.Controls.Add(Me.TXTBOXSIZE)
+        Me.TabPage1.Controls.Add(Me.Label43)
         Me.TabPage1.Controls.Add(Me.GroupBox3)
         Me.TabPage1.Controls.Add(Me.CMBNAME)
         Me.TabPage1.Controls.Add(Me.Label41)
         Me.TabPage1.Controls.Add(Me.Label18)
         Me.TabPage1.Controls.Add(Me.CHK2DCODE)
-        Me.TabPage1.Controls.Add(Me.txtsizefoldingheight)
         Me.TabPage1.Controls.Add(Me.CHKFOLDED)
-        Me.TabPage1.Controls.Add(Me.Label31)
         Me.TabPage1.Controls.Add(Me.CMBSIDE)
         Me.TabPage1.Controls.Add(Me.Label29)
-        Me.TabPage1.Controls.Add(Me.Label25)
         Me.TabPage1.Controls.Add(Me.TXTKNIFE)
         Me.TabPage1.Controls.Add(Me.Label16)
         Me.TabPage1.Controls.Add(Me.Label2)
@@ -779,19 +791,15 @@ Partial Class ItemMaster
         Me.TabPage1.Controls.Add(Me.txtups)
         Me.TabPage1.Controls.Add(Me.txtcutsize)
         Me.TabPage1.Controls.Add(Me.Label15)
-        Me.TabPage1.Controls.Add(Me.TXTMATERIALCODE)
         Me.TabPage1.Controls.Add(Me.cmbgrain)
         Me.TabPage1.Controls.Add(Me.CMBPAPERSIZE)
         Me.TabPage1.Controls.Add(Me.cmbdesign)
-        Me.TabPage1.Controls.Add(Me.Label20)
         Me.TabPage1.Controls.Add(Me.Label21)
         Me.TabPage1.Controls.Add(Me.Label19)
         Me.TabPage1.Controls.Add(Me.txtvarnish)
-        Me.TabPage1.Controls.Add(Me.txtlinks)
         Me.TabPage1.Controls.Add(Me.cmbmaterial)
         Me.TabPage1.Controls.Add(Me.CMBPAPERGSM)
         Me.TabPage1.Controls.Add(Me.Label14)
-        Me.TabPage1.Controls.Add(Me.Label17)
         Me.TabPage1.Controls.Add(Me.txtsizefoldingwidth)
         Me.TabPage1.Controls.Add(Me.Label23)
         Me.TabPage1.Controls.Add(Me.Label13)
@@ -814,9 +822,18 @@ Partial Class ItemMaster
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "1. Item Details"
         '
+        'txtrepeatlength
+        '
+        Me.txtrepeatlength.Location = New System.Drawing.Point(117, 89)
+        Me.txtrepeatlength.MaxLength = 50
+        Me.txtrepeatlength.Name = "txtrepeatlength"
+        Me.txtrepeatlength.Size = New System.Drawing.Size(146, 23)
+        Me.txtrepeatlength.TabIndex = 3
+        '
         'GroupBox3
         '
         Me.GroupBox3.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox3.Controls.Add(Me.txtrepeatlength)
         Me.GroupBox3.Controls.Add(Me.Label7)
         Me.GroupBox3.Controls.Add(Me.Label6)
         Me.GroupBox3.Controls.Add(Me.txtfonts)
@@ -824,33 +841,32 @@ Partial Class ItemMaster
         Me.GroupBox3.Controls.Add(Me.txtactualsizeheight)
         Me.GroupBox3.Controls.Add(Me.txtsoftware)
         Me.GroupBox3.Controls.Add(Me.Label30)
+        Me.GroupBox3.Controls.Add(Me.txtsizefoldingheight)
         Me.GroupBox3.Controls.Add(Me.txtartist)
+        Me.GroupBox3.Controls.Add(Me.Label31)
         Me.GroupBox3.Controls.Add(Me.txtscreen)
         Me.GroupBox3.Controls.Add(Me.Label27)
         Me.GroupBox3.Controls.Add(Me.Label10)
         Me.GroupBox3.Controls.Add(Me.cmbcoordinator)
+        Me.GroupBox3.Controls.Add(Me.Label25)
+        Me.GroupBox3.Controls.Add(Me.txtlinks)
+        Me.GroupBox3.Controls.Add(Me.Label17)
+        Me.GroupBox3.Controls.Add(Me.Label20)
+        Me.GroupBox3.Controls.Add(Me.TXTMATERIALCODE)
         Me.GroupBox3.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.Location = New System.Drawing.Point(702, 115)
+        Me.GroupBox3.Location = New System.Drawing.Point(592, 1)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(297, 157)
+        Me.GroupBox3.Size = New System.Drawing.Size(274, 273)
         Me.GroupBox3.TabIndex = 325
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Visible = False
-        '
-        'txtrepeatlength
-        '
-        Me.txtrepeatlength.Location = New System.Drawing.Point(829, 89)
-        Me.txtrepeatlength.MaxLength = 50
-        Me.txtrepeatlength.Name = "txtrepeatlength"
-        Me.txtrepeatlength.Size = New System.Drawing.Size(146, 22)
-        Me.txtrepeatlength.TabIndex = 3
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(87, 83)
+        Me.Label7.Location = New System.Drawing.Point(77, 196)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(37, 15)
         Me.Label7.TabIndex = 135
@@ -861,7 +877,7 @@ Partial Class ItemMaster
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(51, 58)
+        Me.Label6.Location = New System.Drawing.Point(41, 170)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(74, 15)
         Me.Label6.TabIndex = 133
@@ -870,58 +886,27 @@ Partial Class ItemMaster
         'txtfonts
         '
         Me.txtfonts.BackColor = System.Drawing.SystemColors.Window
-        Me.txtfonts.Location = New System.Drawing.Point(127, 79)
+        Me.txtfonts.Location = New System.Drawing.Point(117, 192)
         Me.txtfonts.MaxLength = 100
         Me.txtfonts.Name = "txtfonts"
         Me.txtfonts.Size = New System.Drawing.Size(146, 23)
         Me.txtfonts.TabIndex = 7
-        '
-        'txtsizefoldingheight
-        '
-        Me.txtsizefoldingheight.BackColor = System.Drawing.SystemColors.Window
-        Me.txtsizefoldingheight.Location = New System.Drawing.Point(829, 38)
-        Me.txtsizefoldingheight.MaxLength = 100
-        Me.txtsizefoldingheight.Name = "txtsizefoldingheight"
-        Me.txtsizefoldingheight.Size = New System.Drawing.Size(146, 22)
-        Me.txtsizefoldingheight.TabIndex = 1
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(91, 8)
+        Me.Label9.Location = New System.Drawing.Point(81, 120)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(36, 15)
         Me.Label9.TabIndex = 134
         Me.Label9.Text = "Artist"
         '
-        'Label31
-        '
-        Me.Label31.AutoSize = True
-        Me.Label31.BackColor = System.Drawing.Color.Transparent
-        Me.Label31.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label31.Location = New System.Drawing.Point(717, 42)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(115, 14)
-        Me.Label31.TabIndex = 173
-        Me.Label31.Text = "After Folding Height"
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.BackColor = System.Drawing.Color.Transparent
-        Me.Label25.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label25.Location = New System.Drawing.Point(791, 16)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(35, 14)
-        Me.Label25.TabIndex = 157
-        Me.Label25.Text = "Links"
-        '
         'txtactualsizeheight
         '
         Me.txtactualsizeheight.BackColor = System.Drawing.SystemColors.Window
-        Me.txtactualsizeheight.Location = New System.Drawing.Point(126, 130)
+        Me.txtactualsizeheight.Location = New System.Drawing.Point(116, 246)
         Me.txtactualsizeheight.MaxLength = 100
         Me.txtactualsizeheight.Name = "txtactualsizeheight"
         Me.txtactualsizeheight.Size = New System.Drawing.Size(146, 23)
@@ -930,7 +915,7 @@ Partial Class ItemMaster
         'txtsoftware
         '
         Me.txtsoftware.BackColor = System.Drawing.SystemColors.Window
-        Me.txtsoftware.Location = New System.Drawing.Point(127, 28)
+        Me.txtsoftware.Location = New System.Drawing.Point(117, 140)
         Me.txtsoftware.MaxLength = 100
         Me.txtsoftware.Name = "txtsoftware"
         Me.txtsoftware.Size = New System.Drawing.Size(146, 23)
@@ -941,7 +926,7 @@ Partial Class ItemMaster
         Me.Label30.AutoSize = True
         Me.Label30.BackColor = System.Drawing.Color.Transparent
         Me.Label30.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label30.Location = New System.Drawing.Point(21, 134)
+        Me.Label30.Location = New System.Drawing.Point(11, 250)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(103, 15)
         Me.Label30.TabIndex = 171
@@ -950,7 +935,7 @@ Partial Class ItemMaster
         'txtartist
         '
         Me.txtartist.BackColor = System.Drawing.SystemColors.Window
-        Me.txtartist.Location = New System.Drawing.Point(127, 4)
+        Me.txtartist.Location = New System.Drawing.Point(117, 116)
         Me.txtartist.MaxLength = 100
         Me.txtartist.Name = "txtartist"
         Me.txtartist.Size = New System.Drawing.Size(146, 23)
@@ -959,90 +944,50 @@ Partial Class ItemMaster
         'txtscreen
         '
         Me.txtscreen.BackColor = System.Drawing.SystemColors.Window
-        Me.txtscreen.Location = New System.Drawing.Point(127, 105)
+        Me.txtscreen.Location = New System.Drawing.Point(117, 218)
         Me.txtscreen.MaxLength = 100
         Me.txtscreen.Name = "txtscreen"
         Me.txtscreen.Size = New System.Drawing.Size(146, 23)
         Me.txtscreen.TabIndex = 8
-        '
-        'TXTMATERIALCODE
-        '
-        Me.TXTMATERIALCODE.BackColor = System.Drawing.SystemColors.Window
-        Me.TXTMATERIALCODE.Location = New System.Drawing.Point(829, 64)
-        Me.TXTMATERIALCODE.MaxLength = 100
-        Me.TXTMATERIALCODE.Name = "TXTMATERIALCODE"
-        Me.TXTMATERIALCODE.Size = New System.Drawing.Size(146, 22)
-        Me.TXTMATERIALCODE.TabIndex = 2
         '
         'Label27
         '
         Me.Label27.AutoSize = True
         Me.Label27.BackColor = System.Drawing.Color.Transparent
         Me.Label27.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label27.Location = New System.Drawing.Point(72, 32)
+        Me.Label27.Location = New System.Drawing.Point(62, 144)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(55, 15)
         Me.Label27.TabIndex = 156
         Me.Label27.Text = "Software"
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.BackColor = System.Drawing.Color.Transparent
-        Me.Label20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label20.Location = New System.Drawing.Point(744, 68)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(84, 14)
-        Me.Label20.TabIndex = 168
-        Me.Label20.Text = "Material Code"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(81, 109)
+        Me.Label10.Location = New System.Drawing.Point(71, 222)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(43, 15)
         Me.Label10.TabIndex = 137
         Me.Label10.Text = "Screen"
-        '
-        'txtlinks
-        '
-        Me.txtlinks.BackColor = System.Drawing.SystemColors.Window
-        Me.txtlinks.Location = New System.Drawing.Point(829, 13)
-        Me.txtlinks.MaxLength = 100
-        Me.txtlinks.Name = "txtlinks"
-        Me.txtlinks.Size = New System.Drawing.Size(146, 22)
-        Me.txtlinks.TabIndex = 0
         '
         'cmbcoordinator
         '
         Me.cmbcoordinator.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.cmbcoordinator.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cmbcoordinator.FormattingEnabled = True
-        Me.cmbcoordinator.Location = New System.Drawing.Point(127, 54)
+        Me.cmbcoordinator.Location = New System.Drawing.Point(117, 166)
         Me.cmbcoordinator.Name = "cmbcoordinator"
         Me.cmbcoordinator.Size = New System.Drawing.Size(146, 23)
         Me.cmbcoordinator.TabIndex = 6
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.BackColor = System.Drawing.Color.Transparent
-        Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label17.Location = New System.Drawing.Point(719, 93)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(109, 14)
-        Me.Label17.TabIndex = 147
-        Me.Label17.Text = "Print repeat length"
         '
         'CMBNAME
         '
         Me.CMBNAME.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.CMBNAME.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.CMBNAME.FormattingEnabled = True
-        Me.CMBNAME.Location = New System.Drawing.Point(132, 11)
+        Me.CMBNAME.Location = New System.Drawing.Point(83, 10)
         Me.CMBNAME.Name = "CMBNAME"
         Me.CMBNAME.Size = New System.Drawing.Size(181, 22)
         Me.CMBNAME.TabIndex = 0
@@ -1052,7 +997,7 @@ Partial Class ItemMaster
         Me.Label41.AutoSize = True
         Me.Label41.BackColor = System.Drawing.Color.Transparent
         Me.Label41.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label41.Location = New System.Drawing.Point(55, 14)
+        Me.Label41.Location = New System.Drawing.Point(6, 13)
         Me.Label41.Name = "Label41"
         Me.Label41.Size = New System.Drawing.Size(74, 14)
         Me.Label41.TabIndex = 324
@@ -1063,7 +1008,7 @@ Partial Class ItemMaster
         Me.Label18.AutoSize = True
         Me.Label18.BackColor = System.Drawing.Color.Transparent
         Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label18.Location = New System.Drawing.Point(362, 232)
+        Me.Label18.Location = New System.Drawing.Point(313, 231)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(89, 14)
         Me.Label18.TabIndex = 148
@@ -1073,23 +1018,43 @@ Partial Class ItemMaster
         '
         Me.CHK2DCODE.AutoSize = True
         Me.CHK2DCODE.BackColor = System.Drawing.Color.Transparent
-        Me.CHK2DCODE.Location = New System.Drawing.Point(202, 181)
+        Me.CHK2DCODE.Location = New System.Drawing.Point(153, 170)
         Me.CHK2DCODE.Name = "CHK2DCODE"
         Me.CHK2DCODE.Size = New System.Drawing.Size(70, 18)
         Me.CHK2DCODE.TabIndex = 322
         Me.CHK2DCODE.Text = "2D Code"
         Me.CHK2DCODE.UseVisualStyleBackColor = False
         '
+        'txtsizefoldingheight
+        '
+        Me.txtsizefoldingheight.BackColor = System.Drawing.SystemColors.Window
+        Me.txtsizefoldingheight.Location = New System.Drawing.Point(117, 34)
+        Me.txtsizefoldingheight.MaxLength = 100
+        Me.txtsizefoldingheight.Name = "txtsizefoldingheight"
+        Me.txtsizefoldingheight.Size = New System.Drawing.Size(146, 23)
+        Me.txtsizefoldingheight.TabIndex = 1
+        '
         'CHKFOLDED
         '
         Me.CHKFOLDED.AutoSize = True
         Me.CHKFOLDED.BackColor = System.Drawing.Color.Transparent
-        Me.CHKFOLDED.Location = New System.Drawing.Point(132, 181)
+        Me.CHKFOLDED.Location = New System.Drawing.Point(83, 170)
         Me.CHKFOLDED.Name = "CHKFOLDED"
         Me.CHKFOLDED.Size = New System.Drawing.Size(64, 18)
         Me.CHKFOLDED.TabIndex = 321
         Me.CHKFOLDED.Text = "Folded"
         Me.CHKFOLDED.UseVisualStyleBackColor = False
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.BackColor = System.Drawing.Color.Transparent
+        Me.Label31.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label31.Location = New System.Drawing.Point(5, 38)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(115, 15)
+        Me.Label31.TabIndex = 173
+        Me.Label31.Text = "After Folding Height"
         '
         'CMBSIDE
         '
@@ -1098,7 +1063,7 @@ Partial Class ItemMaster
         Me.CMBSIDE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CMBSIDE.FormattingEnabled = True
         Me.CMBSIDE.Items.AddRange(New Object() {"One", "Both"})
-        Me.CMBSIDE.Location = New System.Drawing.Point(132, 151)
+        Me.CMBSIDE.Location = New System.Drawing.Point(83, 144)
         Me.CMBSIDE.Name = "CMBSIDE"
         Me.CMBSIDE.Size = New System.Drawing.Size(181, 22)
         Me.CMBSIDE.TabIndex = 5
@@ -1108,16 +1073,27 @@ Partial Class ItemMaster
         Me.Label29.AutoSize = True
         Me.Label29.BackColor = System.Drawing.Color.Transparent
         Me.Label29.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label29.Location = New System.Drawing.Point(58, 155)
+        Me.Label29.Location = New System.Drawing.Point(9, 148)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(74, 14)
         Me.Label29.TabIndex = 169
         Me.Label29.Text = "Side To Print"
         '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.BackColor = System.Drawing.Color.Transparent
+        Me.Label25.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label25.Location = New System.Drawing.Point(79, 9)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(35, 15)
+        Me.Label25.TabIndex = 157
+        Me.Label25.Text = "Links"
+        '
         'TXTKNIFE
         '
         Me.TXTKNIFE.BackColor = System.Drawing.SystemColors.Window
-        Me.TXTKNIFE.Location = New System.Drawing.Point(132, 123)
+        Me.TXTKNIFE.Location = New System.Drawing.Point(83, 119)
         Me.TXTKNIFE.MaxLength = 10
         Me.TXTKNIFE.Name = "TXTKNIFE"
         Me.TXTKNIFE.Size = New System.Drawing.Size(181, 22)
@@ -1129,7 +1105,7 @@ Partial Class ItemMaster
         Me.Label16.AutoSize = True
         Me.Label16.BackColor = System.Drawing.Color.Transparent
         Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label16.Location = New System.Drawing.Point(94, 127)
+        Me.Label16.Location = New System.Drawing.Point(45, 123)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(35, 14)
         Me.Label16.TabIndex = 166
@@ -1159,7 +1135,7 @@ Partial Class ItemMaster
         'txtups
         '
         Me.txtups.BackColor = System.Drawing.SystemColors.Window
-        Me.txtups.Location = New System.Drawing.Point(457, 255)
+        Me.txtups.Location = New System.Drawing.Point(408, 254)
         Me.txtups.MaxLength = 3
         Me.txtups.Name = "txtups"
         Me.txtups.Size = New System.Drawing.Size(146, 22)
@@ -1168,7 +1144,7 @@ Partial Class ItemMaster
         '
         'txtcutsize
         '
-        Me.txtcutsize.Location = New System.Drawing.Point(457, 172)
+        Me.txtcutsize.Location = New System.Drawing.Point(408, 171)
         Me.txtcutsize.MaxLength = 100
         Me.txtcutsize.Name = "txtcutsize"
         Me.txtcutsize.Size = New System.Drawing.Size(146, 22)
@@ -1179,18 +1155,27 @@ Partial Class ItemMaster
         Me.Label15.AutoSize = True
         Me.Label15.BackColor = System.Drawing.Color.Transparent
         Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label15.Location = New System.Drawing.Point(389, 204)
+        Me.Label15.Location = New System.Drawing.Point(340, 203)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(66, 14)
         Me.Label15.TabIndex = 162
         Me.Label15.Text = "Paper Size "
+        '
+        'TXTMATERIALCODE
+        '
+        Me.TXTMATERIALCODE.BackColor = System.Drawing.SystemColors.Window
+        Me.TXTMATERIALCODE.Location = New System.Drawing.Point(117, 62)
+        Me.TXTMATERIALCODE.MaxLength = 100
+        Me.TXTMATERIALCODE.Name = "TXTMATERIALCODE"
+        Me.TXTMATERIALCODE.Size = New System.Drawing.Size(146, 23)
+        Me.TXTMATERIALCODE.TabIndex = 2
         '
         'cmbgrain
         '
         Me.cmbgrain.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.cmbgrain.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cmbgrain.FormattingEnabled = True
-        Me.cmbgrain.Location = New System.Drawing.Point(457, 228)
+        Me.cmbgrain.Location = New System.Drawing.Point(408, 227)
         Me.cmbgrain.Name = "cmbgrain"
         Me.cmbgrain.Size = New System.Drawing.Size(146, 22)
         Me.cmbgrain.TabIndex = 14
@@ -1200,7 +1185,7 @@ Partial Class ItemMaster
         Me.CMBPAPERSIZE.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.CMBPAPERSIZE.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.CMBPAPERSIZE.FormattingEnabled = True
-        Me.CMBPAPERSIZE.Location = New System.Drawing.Point(457, 200)
+        Me.CMBPAPERSIZE.Location = New System.Drawing.Point(408, 199)
         Me.CMBPAPERSIZE.Name = "CMBPAPERSIZE"
         Me.CMBPAPERSIZE.Size = New System.Drawing.Size(146, 22)
         Me.CMBPAPERSIZE.TabIndex = 13
@@ -1210,17 +1195,28 @@ Partial Class ItemMaster
         Me.cmbdesign.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.cmbdesign.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cmbdesign.FormattingEnabled = True
-        Me.cmbdesign.Location = New System.Drawing.Point(132, 39)
+        Me.cmbdesign.Location = New System.Drawing.Point(83, 38)
         Me.cmbdesign.Name = "cmbdesign"
         Me.cmbdesign.Size = New System.Drawing.Size(181, 22)
         Me.cmbdesign.TabIndex = 1
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.BackColor = System.Drawing.Color.Transparent
+        Me.Label20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label20.Location = New System.Drawing.Point(32, 66)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(85, 15)
+        Me.Label20.TabIndex = 168
+        Me.Label20.Text = "Material Code"
         '
         'Label21
         '
         Me.Label21.AutoSize = True
         Me.Label21.BackColor = System.Drawing.Color.Transparent
         Me.Label21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label21.Location = New System.Drawing.Point(392, 258)
+        Me.Label21.Location = New System.Drawing.Point(343, 257)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(63, 14)
         Me.Label21.TabIndex = 142
@@ -1231,7 +1227,7 @@ Partial Class ItemMaster
         Me.Label19.AutoSize = True
         Me.Label19.BackColor = System.Drawing.Color.Transparent
         Me.Label19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label19.Location = New System.Drawing.Point(373, 176)
+        Me.Label19.Location = New System.Drawing.Point(324, 175)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(83, 14)
         Me.Label19.TabIndex = 161
@@ -1240,18 +1236,27 @@ Partial Class ItemMaster
         'txtvarnish
         '
         Me.txtvarnish.BackColor = System.Drawing.SystemColors.Window
-        Me.txtvarnish.Location = New System.Drawing.Point(132, 67)
+        Me.txtvarnish.Location = New System.Drawing.Point(83, 66)
         Me.txtvarnish.MaxLength = 100
         Me.txtvarnish.Name = "txtvarnish"
         Me.txtvarnish.Size = New System.Drawing.Size(181, 22)
         Me.txtvarnish.TabIndex = 2
+        '
+        'txtlinks
+        '
+        Me.txtlinks.BackColor = System.Drawing.SystemColors.Window
+        Me.txtlinks.Location = New System.Drawing.Point(117, 6)
+        Me.txtlinks.MaxLength = 100
+        Me.txtlinks.Name = "txtlinks"
+        Me.txtlinks.Size = New System.Drawing.Size(146, 23)
+        Me.txtlinks.TabIndex = 0
         '
         'cmbmaterial
         '
         Me.cmbmaterial.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.cmbmaterial.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cmbmaterial.FormattingEnabled = True
-        Me.cmbmaterial.Location = New System.Drawing.Point(458, 117)
+        Me.cmbmaterial.Location = New System.Drawing.Point(409, 116)
         Me.cmbmaterial.Name = "cmbmaterial"
         Me.cmbmaterial.Size = New System.Drawing.Size(146, 22)
         Me.cmbmaterial.TabIndex = 10
@@ -1262,7 +1267,7 @@ Partial Class ItemMaster
         Me.CMBPAPERGSM.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.CMBPAPERGSM.BackColor = System.Drawing.SystemColors.Window
         Me.CMBPAPERGSM.FormattingEnabled = True
-        Me.CMBPAPERGSM.Location = New System.Drawing.Point(457, 144)
+        Me.CMBPAPERGSM.Location = New System.Drawing.Point(408, 143)
         Me.CMBPAPERGSM.Name = "CMBPAPERGSM"
         Me.CMBPAPERGSM.Size = New System.Drawing.Size(146, 22)
         Me.CMBPAPERGSM.TabIndex = 11
@@ -1272,16 +1277,27 @@ Partial Class ItemMaster
         Me.Label14.AutoSize = True
         Me.Label14.BackColor = System.Drawing.Color.Transparent
         Me.Label14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label14.Location = New System.Drawing.Point(83, 71)
+        Me.Label14.Location = New System.Drawing.Point(34, 70)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(48, 14)
         Me.Label14.TabIndex = 141
         Me.Label14.Text = "Varnish"
         '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.Transparent
+        Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label17.Location = New System.Drawing.Point(7, 93)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(109, 15)
+        Me.Label17.TabIndex = 147
+        Me.Label17.Text = "Print repeat length"
+        '
         'txtsizefoldingwidth
         '
         Me.txtsizefoldingwidth.BackColor = System.Drawing.SystemColors.Window
-        Me.txtsizefoldingwidth.Location = New System.Drawing.Point(458, 34)
+        Me.txtsizefoldingwidth.Location = New System.Drawing.Point(409, 33)
         Me.txtsizefoldingwidth.MaxLength = 100
         Me.txtsizefoldingwidth.Name = "txtsizefoldingwidth"
         Me.txtsizefoldingwidth.Size = New System.Drawing.Size(146, 22)
@@ -1292,7 +1308,7 @@ Partial Class ItemMaster
         Me.Label23.AutoSize = True
         Me.Label23.BackColor = System.Drawing.Color.Transparent
         Me.Label23.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label23.Location = New System.Drawing.Point(82, 99)
+        Me.Label23.Location = New System.Drawing.Point(33, 98)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(50, 14)
         Me.Label23.TabIndex = 143
@@ -1303,7 +1319,7 @@ Partial Class ItemMaster
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label13.Location = New System.Drawing.Point(403, 121)
+        Me.Label13.Location = New System.Drawing.Point(354, 120)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(54, 14)
         Me.Label13.TabIndex = 140
@@ -1314,7 +1330,7 @@ Partial Class ItemMaster
         Me.cmbcolor.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.cmbcolor.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cmbcolor.FormattingEnabled = True
-        Me.cmbcolor.Location = New System.Drawing.Point(458, 62)
+        Me.cmbcolor.Location = New System.Drawing.Point(409, 61)
         Me.cmbcolor.Name = "cmbcolor"
         Me.cmbcolor.Size = New System.Drawing.Size(146, 22)
         Me.cmbcolor.TabIndex = 8
@@ -1324,7 +1340,7 @@ Partial Class ItemMaster
         Me.lblsizeafterfold.AutoSize = True
         Me.lblsizeafterfold.BackColor = System.Drawing.Color.Transparent
         Me.lblsizeafterfold.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lblsizeafterfold.Location = New System.Drawing.Point(348, 38)
+        Me.lblsizeafterfold.Location = New System.Drawing.Point(299, 37)
         Me.lblsizeafterfold.Name = "lblsizeafterfold"
         Me.lblsizeafterfold.Size = New System.Drawing.Size(112, 14)
         Me.lblsizeafterfold.TabIndex = 159
@@ -1335,7 +1351,7 @@ Partial Class ItemMaster
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label12.Location = New System.Drawing.Point(86, 43)
+        Me.Label12.Location = New System.Drawing.Point(37, 42)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(45, 14)
         Me.Label12.TabIndex = 139
@@ -1344,7 +1360,7 @@ Partial Class ItemMaster
         'txtvertical
         '
         Me.txtvertical.BackColor = System.Drawing.SystemColors.Window
-        Me.txtvertical.Location = New System.Drawing.Point(132, 95)
+        Me.txtvertical.Location = New System.Drawing.Point(83, 94)
         Me.txtvertical.MaxLength = 10
         Me.txtvertical.Name = "txtvertical"
         Me.txtvertical.Size = New System.Drawing.Size(63, 22)
@@ -1354,7 +1370,7 @@ Partial Class ItemMaster
         'txtactualsizewidth
         '
         Me.txtactualsizewidth.BackColor = System.Drawing.SystemColors.Window
-        Me.txtactualsizewidth.Location = New System.Drawing.Point(458, 6)
+        Me.txtactualsizewidth.Location = New System.Drawing.Point(409, 5)
         Me.txtactualsizewidth.MaxLength = 100
         Me.txtactualsizewidth.Name = "txtactualsizewidth"
         Me.txtactualsizewidth.Size = New System.Drawing.Size(146, 22)
@@ -1363,7 +1379,7 @@ Partial Class ItemMaster
         'txtpharmacode
         '
         Me.txtpharmacode.BackColor = System.Drawing.SystemColors.Window
-        Me.txtpharmacode.Location = New System.Drawing.Point(458, 89)
+        Me.txtpharmacode.Location = New System.Drawing.Point(409, 88)
         Me.txtpharmacode.MaxLength = 100
         Me.txtpharmacode.Name = "txtpharmacode"
         Me.txtpharmacode.Size = New System.Drawing.Size(146, 22)
@@ -1374,7 +1390,7 @@ Partial Class ItemMaster
         Me.Label24.AutoSize = True
         Me.Label24.BackColor = System.Drawing.Color.Transparent
         Me.Label24.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label24.Location = New System.Drawing.Point(201, 99)
+        Me.Label24.Location = New System.Drawing.Point(152, 98)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(36, 14)
         Me.Label24.TabIndex = 16
@@ -1385,7 +1401,7 @@ Partial Class ItemMaster
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label11.Location = New System.Drawing.Point(383, 93)
+        Me.Label11.Location = New System.Drawing.Point(334, 92)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(74, 14)
         Me.Label11.TabIndex = 138
@@ -1396,7 +1412,7 @@ Partial Class ItemMaster
         Me.Label22.AutoSize = True
         Me.Label22.BackColor = System.Drawing.Color.Transparent
         Me.Label22.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label22.Location = New System.Drawing.Point(388, 148)
+        Me.Label22.Location = New System.Drawing.Point(339, 147)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(65, 14)
         Me.Label22.TabIndex = 160
@@ -1405,7 +1421,7 @@ Partial Class ItemMaster
         'txthorizontal
         '
         Me.txthorizontal.BackColor = System.Drawing.SystemColors.Window
-        Me.txthorizontal.Location = New System.Drawing.Point(239, 95)
+        Me.txthorizontal.Location = New System.Drawing.Point(190, 94)
         Me.txthorizontal.MaxLength = 10
         Me.txthorizontal.Name = "txthorizontal"
         Me.txthorizontal.Size = New System.Drawing.Size(74, 22)
@@ -1417,7 +1433,7 @@ Partial Class ItemMaster
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(422, 66)
+        Me.Label8.Location = New System.Drawing.Point(373, 65)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(35, 14)
         Me.Label8.TabIndex = 136
@@ -1428,7 +1444,7 @@ Partial Class ItemMaster
         Me.Label26.AutoSize = True
         Me.Label26.BackColor = System.Drawing.Color.Transparent
         Me.Label26.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label26.Location = New System.Drawing.Point(357, 10)
+        Me.Label26.Location = New System.Drawing.Point(308, 9)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(102, 14)
         Me.Label26.TabIndex = 158
@@ -1751,6 +1767,86 @@ Partial Class ItemMaster
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'TXTBUNDEL
+        '
+        Me.TXTBUNDEL.BackColor = System.Drawing.SystemColors.Window
+        Me.TXTBUNDEL.Location = New System.Drawing.Point(83, 218)
+        Me.TXTBUNDEL.MaxLength = 100
+        Me.TXTBUNDEL.Name = "TXTBUNDEL"
+        Me.TXTBUNDEL.Size = New System.Drawing.Size(79, 22)
+        Me.TXTBUNDEL.TabIndex = 327
+        '
+        'Label42
+        '
+        Me.Label42.AutoSize = True
+        Me.Label42.BackColor = System.Drawing.Color.Transparent
+        Me.Label42.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label42.Location = New System.Drawing.Point(26, 221)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(46, 14)
+        Me.Label42.TabIndex = 329
+        Me.Label42.Text = "Bundel"
+        '
+        'TXTBOXSIZE
+        '
+        Me.TXTBOXSIZE.BackColor = System.Drawing.SystemColors.Window
+        Me.TXTBOXSIZE.Location = New System.Drawing.Point(83, 191)
+        Me.TXTBOXSIZE.MaxLength = 100
+        Me.TXTBOXSIZE.Name = "TXTBOXSIZE"
+        Me.TXTBOXSIZE.Size = New System.Drawing.Size(181, 22)
+        Me.TXTBOXSIZE.TabIndex = 326
+        '
+        'Label43
+        '
+        Me.Label43.AutoSize = True
+        Me.Label43.BackColor = System.Drawing.Color.Transparent
+        Me.Label43.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label43.Location = New System.Drawing.Point(31, 195)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(51, 14)
+        Me.Label43.TabIndex = 328
+        Me.Label43.Text = "Box Size"
+        '
+        'TXTTRAYQTY
+        '
+        Me.TXTTRAYQTY.BackColor = System.Drawing.SystemColors.Window
+        Me.TXTTRAYQTY.Location = New System.Drawing.Point(230, 249)
+        Me.TXTTRAYQTY.MaxLength = 100
+        Me.TXTTRAYQTY.Name = "TXTTRAYQTY"
+        Me.TXTTRAYQTY.Size = New System.Drawing.Size(83, 22)
+        Me.TXTTRAYQTY.TabIndex = 331
+        '
+        'Label44
+        '
+        Me.Label44.AutoSize = True
+        Me.Label44.BackColor = System.Drawing.Color.Transparent
+        Me.Label44.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label44.Location = New System.Drawing.Point(170, 253)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(57, 14)
+        Me.Label44.TabIndex = 333
+        Me.Label44.Text = "1 Tray Qty"
+        '
+        'TXTBOXQTY
+        '
+        Me.TXTBOXQTY.BackColor = System.Drawing.SystemColors.Window
+        Me.TXTBOXQTY.Location = New System.Drawing.Point(83, 247)
+        Me.TXTBOXQTY.MaxLength = 100
+        Me.TXTBOXQTY.Name = "TXTBOXQTY"
+        Me.TXTBOXQTY.Size = New System.Drawing.Size(79, 22)
+        Me.TXTBOXQTY.TabIndex = 330
+        '
+        'Label45
+        '
+        Me.Label45.AutoSize = True
+        Me.Label45.BackColor = System.Drawing.Color.Transparent
+        Me.Label45.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label45.Location = New System.Drawing.Point(25, 251)
+        Me.Label45.Name = "Label45"
+        Me.Label45.Size = New System.Drawing.Size(55, 14)
+        Me.Label45.TabIndex = 332
+        Me.Label45.Text = "1 Box Qty"
+        '
         'ItemMaster
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -1923,4 +2019,12 @@ Partial Class ItemMaster
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents CMBCODE As ComboBox
     Friend WithEvents txtdeladd As TextBox
+    Friend WithEvents TXTTRAYQTY As TextBox
+    Friend WithEvents Label44 As Label
+    Friend WithEvents TXTBOXQTY As TextBox
+    Friend WithEvents Label45 As Label
+    Friend WithEvents TXTBUNDEL As TextBox
+    Friend WithEvents Label42 As Label
+    Friend WithEvents TXTBOXSIZE As TextBox
+    Friend WithEvents Label43 As Label
 End Class

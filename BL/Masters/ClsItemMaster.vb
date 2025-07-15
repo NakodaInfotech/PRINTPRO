@@ -140,6 +140,14 @@ Public Class clsItemmaster
                 I += 1
                 .Add(New SqlClient.SqlParameter("@NAME", alParaval(I)))
                 I += 1
+                .Add(New SqlClient.SqlParameter("@BOXSIZE", alParaval(I)))
+                I += 1
+                .Add(New SqlClient.SqlParameter("@BUNDEL", alParaval(I)))
+                I += 1
+                .Add(New SqlClient.SqlParameter("@BOXQTY", alParaval(I)))
+                I += 1
+                .Add(New SqlClient.SqlParameter("@TRAYQTY", alParaval(I)))
+                I += 1
 
 
                 'GRID PARAMETERS
@@ -283,6 +291,14 @@ Public Class clsItemmaster
                 .Add(New SqlClient.SqlParameter("@BLOCKED", alParaval(I)))
                 I += 1
                 .Add(New SqlClient.SqlParameter("@NAME", alParaval(I)))
+                I += 1
+                .Add(New SqlClient.SqlParameter("@BOXSIZE", alParaval(I)))
+                I += 1
+                .Add(New SqlClient.SqlParameter("@BUNDEL", alParaval(I)))
+                I += 1
+                .Add(New SqlClient.SqlParameter("@BOXQTY", alParaval(I)))
+                I += 1
+                .Add(New SqlClient.SqlParameter("@TRAYQTY", alParaval(I)))
                 I += 1
 
                 'GRID PARAMETERS
