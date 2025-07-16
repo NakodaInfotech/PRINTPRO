@@ -107,6 +107,10 @@ Public Class ItemMaster
 
         CMBNAME.Text = ""
 
+        TXTBOXSIZE.Clear()
+        TXTBUNDEL.Clear()
+        TXTBOXQTY.Clear()
+        TXTTRAYQTY.Clear()
 
 
     End Sub
@@ -391,6 +395,10 @@ Public Class ItemMaster
                     bln = False
                 End If
             End If
+
+            If Val(TXTBOXQTY.Text.Trim) = 0 Then TXTBOXQTY.Text = 1
+            If Val(TXTTRAYQTY.Text.Trim) = 0 Then TXTTRAYQTY.Text = 1
+
         End If
 
 

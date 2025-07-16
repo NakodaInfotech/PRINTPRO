@@ -1019,7 +1019,7 @@ Partial Class JobDocketBatch
         Me.LBLCUTTINGDONE.BackColor = System.Drawing.Color.Transparent
         Me.LBLCUTTINGDONE.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLCUTTINGDONE.ForeColor = System.Drawing.Color.Red
-        Me.LBLCUTTINGDONE.Location = New System.Drawing.Point(1184, 84)
+        Me.LBLCUTTINGDONE.Location = New System.Drawing.Point(1184, 39)
         Me.LBLCUTTINGDONE.Name = "LBLCUTTINGDONE"
         Me.LBLCUTTINGDONE.Size = New System.Drawing.Size(97, 19)
         Me.LBLCUTTINGDONE.TabIndex = 1160
@@ -1032,7 +1032,7 @@ Partial Class JobDocketBatch
         Me.LBLFOLDINGDONE.BackColor = System.Drawing.Color.Transparent
         Me.LBLFOLDINGDONE.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLFOLDINGDONE.ForeColor = System.Drawing.Color.Red
-        Me.LBLFOLDINGDONE.Location = New System.Drawing.Point(1137, 83)
+        Me.LBLFOLDINGDONE.Location = New System.Drawing.Point(1137, 38)
         Me.LBLFOLDINGDONE.Name = "LBLFOLDINGDONE"
         Me.LBLFOLDINGDONE.Size = New System.Drawing.Size(99, 19)
         Me.LBLFOLDINGDONE.TabIndex = 1159
@@ -1083,7 +1083,7 @@ Partial Class JobDocketBatch
         Me.LBLPROD2DONE.BackColor = System.Drawing.Color.Transparent
         Me.LBLPROD2DONE.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLPROD2DONE.ForeColor = System.Drawing.Color.Red
-        Me.LBLPROD2DONE.Location = New System.Drawing.Point(1153, 83)
+        Me.LBLPROD2DONE.Location = New System.Drawing.Point(1153, 38)
         Me.LBLPROD2DONE.Name = "LBLPROD2DONE"
         Me.LBLPROD2DONE.Size = New System.Drawing.Size(133, 19)
         Me.LBLPROD2DONE.TabIndex = 1155
@@ -1096,7 +1096,7 @@ Partial Class JobDocketBatch
         Me.LBLPACKINGPRODONE.BackColor = System.Drawing.Color.Transparent
         Me.LBLPACKINGPRODONE.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLPACKINGPRODONE.ForeColor = System.Drawing.Color.Red
-        Me.LBLPACKINGPRODONE.Location = New System.Drawing.Point(1155, 84)
+        Me.LBLPACKINGPRODONE.Location = New System.Drawing.Point(1155, 39)
         Me.LBLPACKINGPRODONE.Name = "LBLPACKINGPRODONE"
         Me.LBLPACKINGPRODONE.Size = New System.Drawing.Size(102, 19)
         Me.LBLPACKINGPRODONE.TabIndex = 1154
@@ -1109,7 +1109,7 @@ Partial Class JobDocketBatch
         Me.LBLPROD1DONE.BackColor = System.Drawing.Color.Transparent
         Me.LBLPROD1DONE.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLPROD1DONE.ForeColor = System.Drawing.Color.Red
-        Me.LBLPROD1DONE.Location = New System.Drawing.Point(1133, 84)
+        Me.LBLPROD1DONE.Location = New System.Drawing.Point(1133, 39)
         Me.LBLPROD1DONE.Name = "LBLPROD1DONE"
         Me.LBLPROD1DONE.Size = New System.Drawing.Size(133, 19)
         Me.LBLPROD1DONE.TabIndex = 1153
@@ -1122,7 +1122,7 @@ Partial Class JobDocketBatch
         Me.LBLFABPRODONE.BackColor = System.Drawing.Color.Transparent
         Me.LBLFABPRODONE.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLFABPRODONE.ForeColor = System.Drawing.Color.Red
-        Me.LBLFABPRODONE.Location = New System.Drawing.Point(1133, 80)
+        Me.LBLFABPRODONE.Location = New System.Drawing.Point(1133, 35)
         Me.LBLFABPRODONE.Name = "LBLFABPRODONE"
         Me.LBLFABPRODONE.Size = New System.Drawing.Size(125, 19)
         Me.LBLFABPRODONE.TabIndex = 1152
@@ -1135,7 +1135,7 @@ Partial Class JobDocketBatch
         Me.LBLNUMPRODONE.BackColor = System.Drawing.Color.Transparent
         Me.LBLNUMPRODONE.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLNUMPRODONE.ForeColor = System.Drawing.Color.Red
-        Me.LBLNUMPRODONE.Location = New System.Drawing.Point(1133, 78)
+        Me.LBLNUMPRODONE.Location = New System.Drawing.Point(1133, 33)
         Me.LBLNUMPRODONE.Name = "LBLNUMPRODONE"
         Me.LBLNUMPRODONE.Size = New System.Drawing.Size(126, 19)
         Me.LBLNUMPRODONE.TabIndex = 1151
@@ -1148,7 +1148,7 @@ Partial Class JobDocketBatch
         Me.LBLENVLPRODONE.BackColor = System.Drawing.Color.Transparent
         Me.LBLENVLPRODONE.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLENVLPRODONE.ForeColor = System.Drawing.Color.Red
-        Me.LBLENVLPRODONE.Location = New System.Drawing.Point(1133, 83)
+        Me.LBLENVLPRODONE.Location = New System.Drawing.Point(1133, 38)
         Me.LBLENVLPRODONE.Name = "LBLENVLPRODONE"
         Me.LBLENVLPRODONE.Size = New System.Drawing.Size(159, 19)
         Me.LBLENVLPRODONE.TabIndex = 1150
@@ -1160,7 +1160,7 @@ Partial Class JobDocketBatch
         Me.Label73.AutoSize = True
         Me.Label73.BackColor = System.Drawing.Color.Transparent
         Me.Label73.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label73.Location = New System.Drawing.Point(1158, 91)
+        Me.Label73.Location = New System.Drawing.Point(1158, 46)
         Me.Label73.Name = "Label73"
         Me.Label73.Size = New System.Drawing.Size(0, 15)
         Me.Label73.TabIndex = 1149
@@ -1172,7 +1172,7 @@ Partial Class JobDocketBatch
         Me.LBLPUNCPRODONE.BackColor = System.Drawing.Color.Transparent
         Me.LBLPUNCPRODONE.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLPUNCPRODONE.ForeColor = System.Drawing.Color.Red
-        Me.LBLPUNCPRODONE.Location = New System.Drawing.Point(1133, 83)
+        Me.LBLPUNCPRODONE.Location = New System.Drawing.Point(1133, 38)
         Me.LBLPUNCPRODONE.Name = "LBLPUNCPRODONE"
         Me.LBLPUNCPRODONE.Size = New System.Drawing.Size(113, 19)
         Me.LBLPUNCPRODONE.TabIndex = 1148
@@ -1185,7 +1185,7 @@ Partial Class JobDocketBatch
         Me.LBLBINDPRODONE.BackColor = System.Drawing.Color.Transparent
         Me.LBLBINDPRODONE.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLBINDPRODONE.ForeColor = System.Drawing.Color.Red
-        Me.LBLBINDPRODONE.Location = New System.Drawing.Point(1133, 83)
+        Me.LBLBINDPRODONE.Location = New System.Drawing.Point(1133, 38)
         Me.LBLBINDPRODONE.Name = "LBLBINDPRODONE"
         Me.LBLBINDPRODONE.Size = New System.Drawing.Size(101, 19)
         Me.LBLBINDPRODONE.TabIndex = 1147
@@ -1198,7 +1198,7 @@ Partial Class JobDocketBatch
         Me.LBLGUMPRODONE.BackColor = System.Drawing.Color.Transparent
         Me.LBLGUMPRODONE.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLGUMPRODONE.ForeColor = System.Drawing.Color.Red
-        Me.LBLGUMPRODONE.Location = New System.Drawing.Point(1133, 82)
+        Me.LBLGUMPRODONE.Location = New System.Drawing.Point(1133, 37)
         Me.LBLGUMPRODONE.Name = "LBLGUMPRODONE"
         Me.LBLGUMPRODONE.Size = New System.Drawing.Size(115, 19)
         Me.LBLGUMPRODONE.TabIndex = 1146
@@ -1211,7 +1211,7 @@ Partial Class JobDocketBatch
         Me.LBLFOILPRODONE.BackColor = System.Drawing.Color.Transparent
         Me.LBLFOILPRODONE.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLFOILPRODONE.ForeColor = System.Drawing.Color.Red
-        Me.LBLFOILPRODONE.Location = New System.Drawing.Point(1133, 79)
+        Me.LBLFOILPRODONE.Location = New System.Drawing.Point(1133, 34)
         Me.LBLFOILPRODONE.Name = "LBLFOILPRODONE"
         Me.LBLFOILPRODONE.Size = New System.Drawing.Size(94, 19)
         Me.LBLFOILPRODONE.TabIndex = 1145
@@ -1224,7 +1224,7 @@ Partial Class JobDocketBatch
         Me.LBLUVPRODONE.BackColor = System.Drawing.Color.Transparent
         Me.LBLUVPRODONE.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLUVPRODONE.ForeColor = System.Drawing.Color.Red
-        Me.LBLUVPRODONE.Location = New System.Drawing.Point(1133, 80)
+        Me.LBLUVPRODONE.Location = New System.Drawing.Point(1133, 35)
         Me.LBLUVPRODONE.Name = "LBLUVPRODONE"
         Me.LBLUVPRODONE.Size = New System.Drawing.Size(68, 19)
         Me.LBLUVPRODONE.TabIndex = 1144
@@ -1237,7 +1237,7 @@ Partial Class JobDocketBatch
         Me.LBLLAMPRODONE.BackColor = System.Drawing.Color.Transparent
         Me.LBLLAMPRODONE.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLLAMPRODONE.ForeColor = System.Drawing.Color.Red
-        Me.LBLLAMPRODONE.Location = New System.Drawing.Point(1134, 74)
+        Me.LBLLAMPRODONE.Location = New System.Drawing.Point(1134, 29)
         Me.LBLLAMPRODONE.Name = "LBLLAMPRODONE"
         Me.LBLLAMPRODONE.Size = New System.Drawing.Size(125, 19)
         Me.LBLLAMPRODONE.TabIndex = 1143
@@ -1250,7 +1250,7 @@ Partial Class JobDocketBatch
         Me.LBLLAMCUTPRODONE.BackColor = System.Drawing.Color.Transparent
         Me.LBLLAMCUTPRODONE.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLLAMCUTPRODONE.ForeColor = System.Drawing.Color.Red
-        Me.LBLLAMCUTPRODONE.Location = New System.Drawing.Point(1110, 85)
+        Me.LBLLAMCUTPRODONE.Location = New System.Drawing.Point(1110, 37)
         Me.LBLLAMCUTPRODONE.Name = "LBLLAMCUTPRODONE"
         Me.LBLLAMCUTPRODONE.Size = New System.Drawing.Size(183, 19)
         Me.LBLLAMCUTPRODONE.TabIndex = 1142
@@ -1304,7 +1304,7 @@ Partial Class JobDocketBatch
         Me.CMBOUTVENDORNAME.BackColor = System.Drawing.Color.LemonChiffon
         Me.CMBOUTVENDORNAME.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CMBOUTVENDORNAME.FormattingEnabled = True
-        Me.CMBOUTVENDORNAME.Location = New System.Drawing.Point(959, 29)
+        Me.CMBOUTVENDORNAME.Location = New System.Drawing.Point(924, 29)
         Me.CMBOUTVENDORNAME.MaxDropDownItems = 14
         Me.CMBOUTVENDORNAME.MaxLength = 200
         Me.CMBOUTVENDORNAME.Name = "CMBOUTVENDORNAME"
@@ -1317,7 +1317,7 @@ Partial Class JobDocketBatch
         Me.LBLVENDORNAME.AutoSize = True
         Me.LBLVENDORNAME.BackColor = System.Drawing.Color.Transparent
         Me.LBLVENDORNAME.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.LBLVENDORNAME.Location = New System.Drawing.Point(877, 33)
+        Me.LBLVENDORNAME.Location = New System.Drawing.Point(842, 33)
         Me.LBLVENDORNAME.Name = "LBLVENDORNAME"
         Me.LBLVENDORNAME.Size = New System.Drawing.Size(79, 15)
         Me.LBLVENDORNAME.TabIndex = 1137
@@ -1328,7 +1328,7 @@ Partial Class JobDocketBatch
         '
         Me.txtadd.BackColor = System.Drawing.Color.Linen
         Me.txtadd.ForeColor = System.Drawing.Color.DimGray
-        Me.txtadd.Location = New System.Drawing.Point(1155, 29)
+        Me.txtadd.Location = New System.Drawing.Point(850, 52)
         Me.txtadd.Multiline = True
         Me.txtadd.Name = "txtadd"
         Me.txtadd.ReadOnly = True
@@ -1343,7 +1343,7 @@ Partial Class JobDocketBatch
         Me.CMBCODE.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.CMBCODE.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CMBCODE.FormattingEnabled = True
-        Me.CMBCODE.Location = New System.Drawing.Point(1160, 30)
+        Me.CMBCODE.Location = New System.Drawing.Point(855, 50)
         Me.CMBCODE.MaxDropDownItems = 14
         Me.CMBCODE.Name = "CMBCODE"
         Me.CMBCODE.Size = New System.Drawing.Size(44, 21)
@@ -1405,7 +1405,7 @@ Partial Class JobDocketBatch
         Me.CMBMACHINE.ForeColor = System.Drawing.Color.Black
         Me.CMBMACHINE.FormattingEnabled = True
         Me.CMBMACHINE.Items.AddRange(New Object() {"", "MTB", "Solana"})
-        Me.CMBMACHINE.Location = New System.Drawing.Point(750, 29)
+        Me.CMBMACHINE.Location = New System.Drawing.Point(734, 29)
         Me.CMBMACHINE.Name = "CMBMACHINE"
         Me.CMBMACHINE.Size = New System.Drawing.Size(100, 23)
         Me.CMBMACHINE.TabIndex = 5
@@ -1416,7 +1416,7 @@ Partial Class JobDocketBatch
         Me.LBLMACHINE.AutoSize = True
         Me.LBLMACHINE.BackColor = System.Drawing.Color.Transparent
         Me.LBLMACHINE.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.LBLMACHINE.Location = New System.Drawing.Point(689, 33)
+        Me.LBLMACHINE.Location = New System.Drawing.Point(673, 33)
         Me.LBLMACHINE.Name = "LBLMACHINE"
         Me.LBLMACHINE.Size = New System.Drawing.Size(55, 15)
         Me.LBLMACHINE.TabIndex = 1121
@@ -2695,7 +2695,7 @@ Partial Class JobDocketBatch
         Me.GroupBox1.Controls.Add(Me.txtcutsize)
         Me.GroupBox1.Location = New System.Drawing.Point(577, 72)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(470, 201)
+        Me.GroupBox1.Size = New System.Drawing.Size(671, 201)
         Me.GroupBox1.TabIndex = 9
         Me.GroupBox1.TabStop = False
         '
@@ -2771,7 +2771,7 @@ Partial Class JobDocketBatch
         Me.Label23.AutoSize = True
         Me.Label23.BackColor = System.Drawing.Color.Transparent
         Me.Label23.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label23.Location = New System.Drawing.Point(1141, 79)
+        Me.Label23.Location = New System.Drawing.Point(1141, 34)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(0, 15)
         Me.Label23.TabIndex = 1066
