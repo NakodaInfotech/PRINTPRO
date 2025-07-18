@@ -478,7 +478,7 @@ Public Class Consumption
         If gridCONSUME.RowCount > 0 And edit = False Then
             For Each ROW As DataGridViewRow In gridCONSUME.Rows
                 Dim OBJCMN As New ClsCommonMaster
-                Dim DT As DataTable = OBJCMN.search("SUM(QTY)AS QTY", "", "STOCKVIEW", "AND GODOWN='" & CMBGODOWN.Text.Trim & "' AND ITEMNAME = '" & ROW.Cells(gitemname.Index).Value & "' AND YEARID = " & YearId)
+                Dim DT As DataTable = OBJCMN.search("SUM(QTY)AS QTY", "", "STOCKVIEW", "AND GODOWN='" & CMBGODOWN.Text.Trim & "' AND ITEMNAME = '" & ROW.Cells(gitemname.Index).Value & "'  AND CHALLANNO = '" & TXTCHALLANNO.Text.Trim & "' AND YEARID = " & YearId)
                 If DT.Rows.Count <= 0 Then GoTo LINE1
                 If Val(ROW.Cells(gQty.Index).Value) > Val(DT.Rows(0).Item(0)) Then
 LINE1:
@@ -493,10 +493,10 @@ LINE1:
             For Each ROW As DataGridViewRow In gridCONSUME.Rows
                 Dim BALQTY As Double = 0
                 Dim objclscommon As New ClsCommonMaster
-                Dim dt As DataTable = objclscommon.search("SUM(QTY)AS QTY", "", "STOCKVIEW", "AND GODOWN='" & CMBGODOWN.Text.Trim & "' AND ITEMNAME = '" & ROW.Cells(gitemname.Index).Value & "' AND YEARID = " & YearId)
+                Dim dt As DataTable = objclscommon.search("SUM(QTY)AS QTY", "", "STOCKVIEW", "AND GODOWN='" & CMBGODOWN.Text.Trim & "' AND CHALLANNO = '" & TXTCHALLANNO.Text.Trim & "'  AND ITEMNAME = '" & ROW.Cells(gitemname.Index).Value & "' AND YEARID = " & YearId)
                 If dt.Rows.Count > 0 Then BALQTY = Format(Val(dt.Rows(0).Item(0)), "0.000")
 
-                dt = objclscommon.search(" ISNULL(CONSUMPTION_DESC.CONSUME_QTY, 0) AS QTY ", "", " CONSUMPTION_DESC INNER JOIN NONINVITEMMASTER ON CONSUMPTION_DESC.CONSUME_ITEMID = NONINVITEMMASTER.NONINV_ID AND CONSUMPTION_DESC.CONSUME_yearid = NONINVITEMMASTER.NONINV_YEARID", " AND CONSUMPTION_DESC.CONSUME_NO = " & TEMPCONSUMENO & " and NONINVITEMMASTER.NONINV_NAME = '" & ROW.Cells(gitemname.Index).Value & "' AND CONSUMPTION_DESC.CONSUME_Yearid = " & YearId)
+                dt = objclscommon.search(" ISNULL(CONSUMPTION_DESC.CONSUME_QTY, 0) AS QTY ", "", " CONSUMPTION_DESC INNER JOIN NONINVITEMMASTER ON CONSUMPTION_DESC.CONSUME_ITEMID = NONINVITEMMASTER.NONINV_ID AND CONSUMPTION_DESC.CONSUME_yearid = NONINVITEMMASTER.NONINV_YEARID INNER JOIN CONSUMPTION ON CONSUMPTION_DESC.CONSUME_no = CONSUMPTION.CONSUME_NO AND CONSUMPTION_DESC.CONSUME_yearid = CONSUMPTION.CONSUME_yearid", " AND CONSUMPTION_DESC.CONSUME_NO = " & TEMPCONSUMENO & " and NONINVITEMMASTER.NONINV_NAME = '" & ROW.Cells(gitemname.Index).Value & "' AND CONSUMPTION.CONSUME_CHALLANNO = '" & TXTCHALLANNO.Text.Trim & "'  AND CONSUMPTION_DESC.CONSUME_Yearid = " & YearId)
                 If dt.Rows.Count > 0 Then BALQTY = BALQTY + Val(dt.Rows(0).Item(0))
 
                 If Val(ROW.Cells(gQty.Index).Value) > BALQTY Then
