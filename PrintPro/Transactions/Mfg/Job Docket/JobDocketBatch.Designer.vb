@@ -233,6 +233,14 @@ Partial Class JobDocketBatch
         Me.Label26 = New System.Windows.Forms.Label()
         Me.TXTJOBQTY = New System.Windows.Forms.TextBox()
         Me.EP = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.Label70 = New System.Windows.Forms.Label()
+        Me.TXTBOXSIZE = New System.Windows.Forms.TextBox()
+        Me.Label71 = New System.Windows.Forms.Label()
+        Me.TXTBUNDEL = New System.Windows.Forms.TextBox()
+        Me.Label72 = New System.Windows.Forms.Label()
+        Me.TXTBOXQTY = New System.Windows.Forms.TextBox()
+        Me.Label74 = New System.Windows.Forms.Label()
+        Me.TXTTRAYQTY = New System.Windows.Forms.TextBox()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.PBlock, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BlendPanel1.SuspendLayout()
@@ -2669,6 +2677,14 @@ Partial Class JobDocketBatch
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.Label70)
+        Me.GroupBox1.Controls.Add(Me.TXTBOXSIZE)
+        Me.GroupBox1.Controls.Add(Me.Label71)
+        Me.GroupBox1.Controls.Add(Me.TXTBUNDEL)
+        Me.GroupBox1.Controls.Add(Me.Label72)
+        Me.GroupBox1.Controls.Add(Me.TXTBOXQTY)
+        Me.GroupBox1.Controls.Add(Me.Label74)
+        Me.GroupBox1.Controls.Add(Me.TXTTRAYQTY)
         Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.txtshadecard)
         Me.GroupBox1.Controls.Add(Me.txtleafletsize)
@@ -2805,6 +2821,90 @@ Partial Class JobDocketBatch
         Me.EP.BlinkRate = 0
         Me.EP.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink
         Me.EP.ContainerControl = Me
+        '
+        'Label70
+        '
+        Me.Label70.AutoSize = True
+        Me.Label70.BackColor = System.Drawing.Color.Transparent
+        Me.Label70.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label70.Location = New System.Drawing.Point(498, 25)
+        Me.Label70.Name = "Label70"
+        Me.Label70.Size = New System.Drawing.Size(51, 15)
+        Me.Label70.TabIndex = 582
+        Me.Label70.Text = "Box Size"
+        '
+        'TXTBOXSIZE
+        '
+        Me.TXTBOXSIZE.BackColor = System.Drawing.Color.Linen
+        Me.TXTBOXSIZE.Location = New System.Drawing.Point(553, 21)
+        Me.TXTBOXSIZE.Name = "TXTBOXSIZE"
+        Me.TXTBOXSIZE.ReadOnly = True
+        Me.TXTBOXSIZE.Size = New System.Drawing.Size(106, 23)
+        Me.TXTBOXSIZE.TabIndex = 581
+        Me.TXTBOXSIZE.TabStop = False
+        '
+        'Label71
+        '
+        Me.Label71.AutoSize = True
+        Me.Label71.BackColor = System.Drawing.Color.Transparent
+        Me.Label71.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label71.Location = New System.Drawing.Point(504, 54)
+        Me.Label71.Name = "Label71"
+        Me.Label71.Size = New System.Drawing.Size(45, 15)
+        Me.Label71.TabIndex = 584
+        Me.Label71.Text = "Bundel"
+        '
+        'TXTBUNDEL
+        '
+        Me.TXTBUNDEL.BackColor = System.Drawing.Color.Linen
+        Me.TXTBUNDEL.Location = New System.Drawing.Point(553, 50)
+        Me.TXTBUNDEL.Name = "TXTBUNDEL"
+        Me.TXTBUNDEL.ReadOnly = True
+        Me.TXTBUNDEL.Size = New System.Drawing.Size(106, 23)
+        Me.TXTBUNDEL.TabIndex = 583
+        Me.TXTBUNDEL.TabStop = False
+        '
+        'Label72
+        '
+        Me.Label72.AutoSize = True
+        Me.Label72.BackColor = System.Drawing.Color.Transparent
+        Me.Label72.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label72.Location = New System.Drawing.Point(491, 83)
+        Me.Label72.Name = "Label72"
+        Me.Label72.Size = New System.Drawing.Size(59, 15)
+        Me.Label72.TabIndex = 586
+        Me.Label72.Text = "1 Box Qty"
+        '
+        'TXTBOXQTY
+        '
+        Me.TXTBOXQTY.BackColor = System.Drawing.Color.Linen
+        Me.TXTBOXQTY.Location = New System.Drawing.Point(553, 79)
+        Me.TXTBOXQTY.Name = "TXTBOXQTY"
+        Me.TXTBOXQTY.ReadOnly = True
+        Me.TXTBOXQTY.Size = New System.Drawing.Size(106, 23)
+        Me.TXTBOXQTY.TabIndex = 585
+        Me.TXTBOXQTY.TabStop = False
+        '
+        'Label74
+        '
+        Me.Label74.AutoSize = True
+        Me.Label74.BackColor = System.Drawing.Color.Transparent
+        Me.Label74.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label74.Location = New System.Drawing.Point(489, 112)
+        Me.Label74.Name = "Label74"
+        Me.Label74.Size = New System.Drawing.Size(62, 15)
+        Me.Label74.TabIndex = 588
+        Me.Label74.Text = "1 Tray Qty"
+        '
+        'TXTTRAYQTY
+        '
+        Me.TXTTRAYQTY.BackColor = System.Drawing.Color.Linen
+        Me.TXTTRAYQTY.Location = New System.Drawing.Point(553, 108)
+        Me.TXTTRAYQTY.Name = "TXTTRAYQTY"
+        Me.TXTTRAYQTY.ReadOnly = True
+        Me.TXTTRAYQTY.Size = New System.Drawing.Size(106, 23)
+        Me.TXTTRAYQTY.TabIndex = 587
+        Me.TXTTRAYQTY.TabStop = False
         '
         'JobDocketBatch
         '
@@ -3039,4 +3139,12 @@ Partial Class JobDocketBatch
     Friend WithEvents Label68 As Label
     Friend WithEvents TXTNUMBERINGUPS As TextBox
     Friend WithEvents Label69 As Label
+    Friend WithEvents Label70 As Label
+    Friend WithEvents TXTBOXSIZE As TextBox
+    Friend WithEvents Label71 As Label
+    Friend WithEvents TXTBUNDEL As TextBox
+    Friend WithEvents Label72 As Label
+    Friend WithEvents TXTBOXQTY As TextBox
+    Friend WithEvents Label74 As Label
+    Friend WithEvents TXTTRAYQTY As TextBox
 End Class

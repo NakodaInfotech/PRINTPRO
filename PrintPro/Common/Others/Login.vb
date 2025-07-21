@@ -154,6 +154,7 @@ LINE1:
                 If txtusername.Text.Trim <> "" And txtpassword.Text.Trim <> "" Then Call cmdok_Click(sender, e)
             End If
         Catch ex As Exception
+
             Throw ex
         End Try
     End Sub
