@@ -113,6 +113,15 @@ Public Class ClsBatch
                 I = I + 1
                 .Add(New SqlClient.SqlParameter("@YEARID", alParaval(I)))
                 I = I + 1
+                .Add(New SqlClient.SqlParameter("@BUNDEL", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@BOXSIZE", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@BOXREQ", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@TRAYREQ", alParaval(I)))
+                I = I + 1
+
 
                 ''GRID PARAMETER
                 .Add(New SqlClient.SqlParameter("@PROCESS", alParaval(I)))
@@ -444,6 +453,15 @@ Public Class ClsBatch
                 .Add(New SqlClient.SqlParameter("@USERID", alParaval(I)))
                 I = I + 1
                 .Add(New SqlClient.SqlParameter("@YEARID", alParaval(I)))
+                I = I + 1
+
+                .Add(New SqlClient.SqlParameter("@BUNDEL", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@BOXSIZE", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@BOXREQ", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@TRAYREQ", alParaval(I)))
                 I = I + 1
 
                 ''GRID PARAMETER

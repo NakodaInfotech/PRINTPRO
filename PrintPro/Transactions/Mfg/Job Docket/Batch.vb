@@ -217,6 +217,11 @@ Public Class Batch
         TXTORDERNO.Clear()
         TXTORDERSRNO.Clear()
         TXTORDERTYPE.Clear()
+
+        TXTBUNDEL.Clear()
+        TXTBOXSIZE.Clear()
+        TXTTRAYREQ.Clear()
+        TXTBOXREQ.Clear()
     End Sub
 
     Sub getmax_batch_no()
@@ -338,6 +343,11 @@ Public Class Batch
                     TXTORDERNO.Text = Convert.ToString(DR("ORDERNO"))
                     TXTORDERSRNO.Text = Convert.ToString(DR("ORDERSRNO"))
                     TXTORDERTYPE.Text = Convert.ToString(DR("ORDERTYPE"))
+
+                    TXTBUNDEL.Text = DR("BUNDEL")
+                    TXTBOXSIZE.Text = DR("BOXSIZE")
+                    TXTBOXREQ.Text = Val(DR("BOXREQ"))
+                    TXTTRAYREQ.Text = Val(DR("TRAYREQ"))
 
 
                     If Convert.ToBoolean(DR("DONE")) = True Then
@@ -480,6 +490,11 @@ Public Class Batch
             ALPARAVAL.Add(CmpId)
             ALPARAVAL.Add(Userid)
             ALPARAVAL.Add(YearId)
+            ALPARAVAL.Add(TXTBUNDEL.Text.Trim)
+            ALPARAVAL.Add(TXTBOXSIZE.Text.Trim)
+            ALPARAVAL.Add(TXTBOXREQ.Text.Trim)
+            ALPARAVAL.Add(TXTTRAYREQ.Text.Trim)
+
 
             ''GRID PARAMETERS
             Dim PROCESS As String = ""
@@ -1230,29 +1245,38 @@ LINE1:
                 Dim objcmn As New ClsCommon
 
                 For Each ROW As DataRow In ORDERDT.Rows
-                    Dim dt As DataTable = objcmn.search(" JOBBATCHMASTER.job_no As JOBDOCKETNO, JOBBATCHMASTER.job_date As JOBDOCKETDATE, LEDGERS.Acc_cmpname As NAME, ISNULL(JOBBATCHMASTER.job_pono, '') AS PONO, ISNULL(ITEMMASTER.item_code, '') AS ITEMCODE, ISNULL(ITEMMASTER.item_name, '') AS ITEMNAME, ISNULL(JOBBATCHMASTER.job_qty - JOBBATCHMASTER.JOB_OUTQTY, 0) AS QTY, ISNULL(ITEMMASTER.item_fileno, '') AS FILENO, ISNULL(COLORMASTER.COLOR_name, '') AS COLOR, ISNULL(JOBBATCHMASTER.JOB_TOTALSHEETS, '') AS TOTALSHEETS, ISNULL(JOBBATCHMASTER.JOB_PERCENTAGE, 0) AS PERCENTAGE, ISNULL(ITEMMASTER.ITEM_2DCODE, 0) AS [2DCODE], ISNULL(SUBITEMITEMMASTER.item_code, '') AS SUBITEMCODE, ISNULL(JOBBATCHMASTER.JOB_UPS, 0) AS UPS ,ISNULL(JOBBATCHMASTER.job_orderno, 0) AS ORDERNO, ISNULL(JOBBATCHMASTER.job_ordersrno, 0) AS ORDERSRNO, ISNULL(JOBBATCHMASTER.JOB_ORDERTYPE, '') AS ORDERTYPE ", "", " ITEMMASTER AS SUBITEMITEMMASTER RIGHT OUTER JOIN JOBBATCHMASTER INNER JOIN LEDGERS ON JOBBATCHMASTER.JOB_LEDGERID = LEDGERS.Acc_id ON SUBITEMITEMMASTER.item_id = JOBBATCHMASTER.JOB_SUBITEMID LEFT OUTER JOIN COLORMASTER RIGHT OUTER JOIN ITEMMASTER ON COLORMASTER.COLOR_id = ITEMMASTER.item_colorid ON JOBBATCHMASTER.job_itemid = ITEMMASTER.item_id", "AND (JOBBATCHMASTER.job_qty - JOBBATCHMASTER.JOB_OUTQTY) > 0 AND JOBBATCHMASTER.JOB_NO = " & Val(ROW(0)) & " AND JOBBATCHMASTER.JOB_YEARID = " & YearId)
+                    Dim dt As DataTable = objcmn.search(" JOBBATCHMASTER.job_no As JOBDOCKETNO, JOBBATCHMASTER.job_date As JOBDOCKETDATE, LEDGERS.Acc_cmpname As NAME, ISNULL(JOBBATCHMASTER.job_pono, '') AS PONO, ISNULL(ITEMMASTER.item_code, '') AS ITEMCODE, ISNULL(ITEMMASTER.item_name, '') AS ITEMNAME, ISNULL(JOBBATCHMASTER.job_qty - JOBBATCHMASTER.JOB_OUTQTY, 0) AS QTY, ISNULL(ITEMMASTER.item_fileno, '') AS FILENO, ISNULL(COLORMASTER.COLOR_name, '') AS COLOR, ISNULL(JOBBATCHMASTER.JOB_TOTALSHEETS, '') AS TOTALSHEETS, ISNULL(JOBBATCHMASTER.JOB_PERCENTAGE, 0) AS PERCENTAGE, ISNULL(ITEMMASTER.ITEM_2DCODE, 0) AS [2DCODE], ISNULL(SUBITEMITEMMASTER.item_code, '') AS SUBITEMCODE, ISNULL(JOBBATCHMASTER.JOB_UPS, 0) AS UPS ,ISNULL(JOBBATCHMASTER.job_orderno, 0) AS ORDERNO, ISNULL(JOBBATCHMASTER.job_ordersrno, 0) AS ORDERSRNO, ISNULL(JOBBATCHMASTER.JOB_ORDERTYPE, '') AS ORDERTYPE , ISNULL(COALESCE (SUBITEMITEMMASTER.ITEM_BOXSIZE, ITEMMASTER.ITEM_BOXSIZE), '') AS BOXSIZE   , ISNULL(COALESCE (SUBITEMITEMMASTER.ITEM_BUNDEL, ITEMMASTER.ITEM_BUNDEL), '') AS BUNDEL ,ISNULL(JOBBATCHMASTER.JOB_OPENSIZE, '') AS TRAYREQ, ISNULL(JOBBATCHMASTER.JOB_CLOSESIZE, '') AS BOXREQ  ", "", " ITEMMASTER AS SUBITEMITEMMASTER RIGHT OUTER JOIN JOBBATCHMASTER INNER JOIN LEDGERS ON JOBBATCHMASTER.JOB_LEDGERID = LEDGERS.Acc_id ON SUBITEMITEMMASTER.item_id = JOBBATCHMASTER.JOB_SUBITEMID LEFT OUTER JOIN COLORMASTER RIGHT OUTER JOIN ITEMMASTER ON COLORMASTER.COLOR_id = ITEMMASTER.item_colorid ON JOBBATCHMASTER.job_itemid = ITEMMASTER.item_id", "AND (JOBBATCHMASTER.job_qty - JOBBATCHMASTER.JOB_OUTQTY) > 0 AND JOBBATCHMASTER.JOB_NO = " & Val(ROW(0)) & " AND JOBBATCHMASTER.JOB_YEARID = " & YearId)
                     If dt.Rows.Count > 0 Then
 
-                            TXTJOBDOCKETNO.Text = dt.Rows(0).Item("JOBDOCKETNO")
-                            DTJOBDOCKETDATE.Value = dt.Rows(0).Item("JOBDOCKETDATE")
-                            txtsrno.Text = dt.Rows(0).Item("FILENO")
-                            txtcolor.Text = dt.Rows(0).Item("COLOR")
-                            txttotalsheets.Text = Val(dt.Rows(0).Item("TOTALSHEETS"))
-                            TXTITEMCODE.Text = dt.Rows(0).Item("ITEMCODE")
-                            TXTITEMNAME.Text = dt.Rows(0).Item("ITEMNAME")
-                            txtqty.Text = dt.Rows(0).Item("QTY")
-                            txtups.Text = dt.Rows(0).Item("UPS")
-                            TXTPERCENTAGE.Text = dt.Rows(0).Item("PERCENTAGE")
-                            txtpartyname.Text = dt.Rows(0).Item("NAME")
-                            txtpono.Text = dt.Rows(0).Item("PONO")
-                            TXTBOMITEMCODE.Text = dt.Rows(0).Item("SUBITEMCODE")
-                            txtname.Text = dt.Rows(0).Item("SUBITEMCODE")
-                            TXTORDERNO.Text = dt.Rows(0).Item("ORDERNO")
-                            TXTORDERSRNO.Text = dt.Rows(0).Item("ORDERSRNO")
-                            TXTORDERTYPE.Text = dt.Rows(0).Item("ORDERTYPE")
+                        TXTJOBDOCKETNO.Text = dt.Rows(0).Item("JOBDOCKETNO")
+                        DTJOBDOCKETDATE.Value = dt.Rows(0).Item("JOBDOCKETDATE")
+                        txtsrno.Text = dt.Rows(0).Item("FILENO")
+                        txtcolor.Text = dt.Rows(0).Item("COLOR")
+                        txttotalsheets.Text = Val(dt.Rows(0).Item("TOTALSHEETS"))
+                        TXTITEMCODE.Text = dt.Rows(0).Item("ITEMCODE")
+                        TXTITEMNAME.Text = dt.Rows(0).Item("ITEMNAME")
+                        txtqty.Text = dt.Rows(0).Item("QTY")
+                        txtups.Text = dt.Rows(0).Item("UPS")
+                        TXTPERCENTAGE.Text = dt.Rows(0).Item("PERCENTAGE")
+                        txtpartyname.Text = dt.Rows(0).Item("NAME")
+                        txtpono.Text = dt.Rows(0).Item("PONO")
+                        TXTBOMITEMCODE.Text = dt.Rows(0).Item("SUBITEMCODE")
+                        txtname.Text = dt.Rows(0).Item("SUBITEMCODE")
+                        TXTORDERNO.Text = dt.Rows(0).Item("ORDERNO")
+                        TXTORDERSRNO.Text = dt.Rows(0).Item("ORDERSRNO")
+                        TXTORDERTYPE.Text = dt.Rows(0).Item("ORDERTYPE")
+                        TXTBUNDEL.Text = dt.Rows(0).Item("BUNDEL")
+                        TXTBOXSIZE.Text = dt.Rows(0).Item("BOXSIZE")
+                        TXTBOXREQ.Text = Val(dt.Rows(0).Item("BOXREQ"))
+                        TXTTRAYREQ.Text = Val(dt.Rows(0).Item("TRAYREQ"))
 
 
-                            CMDSELECTJOBDOCKET.Enabled = False
+
+
+
+
+
+                        CMDSELECTJOBDOCKET.Enabled = False
                             'txtpono.Enabled = False
 
                             'CHECK WHETHER THIS JOB IS OF 2DCODE OR NOT, IF YES THEN FETCH LAST 2DCODEEND FOR THE SAME ITEMNAME AND SHOW IT IN 2DCODESTART

@@ -607,6 +607,14 @@ Partial Class Batch
         Me.txtpartyname = New System.Windows.Forms.TextBox()
         Me.EP = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.TXTBUNDEL = New System.Windows.Forms.TextBox()
+        Me.Label139 = New System.Windows.Forms.Label()
+        Me.Label143 = New System.Windows.Forms.Label()
+        Me.TXTBOXSIZE = New System.Windows.Forms.TextBox()
+        Me.Label157 = New System.Windows.Forms.Label()
+        Me.TXTBOXREQ = New System.Windows.Forms.TextBox()
+        Me.Label158 = New System.Windows.Forms.Label()
+        Me.TXTTRAYREQ = New System.Windows.Forms.TextBox()
         Me.BlendPanel1.SuspendLayout()
         Me.GROUPFOLDING.SuspendLayout()
         Me.GROUPFINAL.SuspendLayout()
@@ -633,6 +641,14 @@ Partial Class Batch
         'BlendPanel1
         '
         Me.BlendPanel1.Blend = New VbPowerPack.BlendFill(VbPowerPack.BlendStyle.Vertical, System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(248, Byte), Integer)), System.Drawing.Color.White)
+        Me.BlendPanel1.Controls.Add(Me.Label158)
+        Me.BlendPanel1.Controls.Add(Me.TXTTRAYREQ)
+        Me.BlendPanel1.Controls.Add(Me.Label157)
+        Me.BlendPanel1.Controls.Add(Me.TXTBOXREQ)
+        Me.BlendPanel1.Controls.Add(Me.Label143)
+        Me.BlendPanel1.Controls.Add(Me.TXTBOXSIZE)
+        Me.BlendPanel1.Controls.Add(Me.Label139)
+        Me.BlendPanel1.Controls.Add(Me.TXTBUNDEL)
         Me.BlendPanel1.Controls.Add(Me.LBLASSEBLYDONE)
         Me.BlendPanel1.Controls.Add(Me.TXTORDERTYPE)
         Me.BlendPanel1.Controls.Add(Me.Label132)
@@ -738,10 +754,10 @@ Partial Class Batch
         '
         Me.TXTORDERTYPE.BackColor = System.Drawing.Color.Linen
         Me.TXTORDERTYPE.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTORDERTYPE.Location = New System.Drawing.Point(999, 105)
+        Me.TXTORDERTYPE.Location = New System.Drawing.Point(999, 107)
         Me.TXTORDERTYPE.Name = "TXTORDERTYPE"
         Me.TXTORDERTYPE.ReadOnly = True
-        Me.TXTORDERTYPE.Size = New System.Drawing.Size(84, 23)
+        Me.TXTORDERTYPE.Size = New System.Drawing.Size(86, 23)
         Me.TXTORDERTYPE.TabIndex = 991
         Me.TXTORDERTYPE.TabStop = False
         Me.TXTORDERTYPE.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -752,7 +768,7 @@ Partial Class Batch
         Me.Label132.BackColor = System.Drawing.Color.Transparent
         Me.Label132.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label132.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label132.Location = New System.Drawing.Point(932, 109)
+        Me.Label132.Location = New System.Drawing.Point(932, 111)
         Me.Label132.Name = "Label132"
         Me.Label132.Size = New System.Drawing.Size(66, 15)
         Me.Label132.TabIndex = 992
@@ -763,7 +779,7 @@ Partial Class Batch
         '
         Me.TXTORDERSRNO.BackColor = System.Drawing.Color.Linen
         Me.TXTORDERSRNO.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTORDERSRNO.Location = New System.Drawing.Point(888, 104)
+        Me.TXTORDERSRNO.Location = New System.Drawing.Point(888, 106)
         Me.TXTORDERSRNO.Name = "TXTORDERSRNO"
         Me.TXTORDERSRNO.ReadOnly = True
         Me.TXTORDERSRNO.Size = New System.Drawing.Size(43, 23)
@@ -777,7 +793,7 @@ Partial Class Batch
         Me.Label123.BackColor = System.Drawing.Color.Transparent
         Me.Label123.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label123.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label123.Location = New System.Drawing.Point(819, 108)
+        Me.Label123.Location = New System.Drawing.Point(819, 110)
         Me.Label123.Name = "Label123"
         Me.Label123.Size = New System.Drawing.Size(70, 15)
         Me.Label123.TabIndex = 990
@@ -788,7 +804,7 @@ Partial Class Batch
         '
         Me.TXTORDERNO.BackColor = System.Drawing.Color.Linen
         Me.TXTORDERNO.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTORDERNO.Location = New System.Drawing.Point(773, 103)
+        Me.TXTORDERNO.Location = New System.Drawing.Point(773, 101)
         Me.TXTORDERNO.Name = "TXTORDERNO"
         Me.TXTORDERNO.ReadOnly = True
         Me.TXTORDERNO.Size = New System.Drawing.Size(43, 23)
@@ -802,7 +818,7 @@ Partial Class Batch
         Me.Label122.BackColor = System.Drawing.Color.Transparent
         Me.Label122.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label122.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label122.Location = New System.Drawing.Point(714, 107)
+        Me.Label122.Location = New System.Drawing.Point(714, 105)
         Me.Label122.Name = "Label122"
         Me.Label122.Size = New System.Drawing.Size(59, 15)
         Me.Label122.TabIndex = 986
@@ -5553,7 +5569,7 @@ Partial Class Batch
         Me.CMBNEW.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CMBNEW.FormattingEnabled = True
         Me.CMBNEW.Items.AddRange(New Object() {"NEW", "REPRINT"})
-        Me.CMBNEW.Location = New System.Drawing.Point(851, 51)
+        Me.CMBNEW.Location = New System.Drawing.Point(652, 85)
         Me.CMBNEW.Name = "CMBNEW"
         Me.CMBNEW.Size = New System.Drawing.Size(60, 23)
         Me.CMBNEW.TabIndex = 247
@@ -5564,7 +5580,7 @@ Partial Class Batch
         Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(800, 55)
+        Me.Label10.Location = New System.Drawing.Point(601, 89)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(48, 15)
         Me.Label10.TabIndex = 248
@@ -5577,7 +5593,7 @@ Partial Class Batch
         Me.Label106.BackColor = System.Drawing.Color.Transparent
         Me.Label106.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label106.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label106.Location = New System.Drawing.Point(769, 81)
+        Me.Label106.Location = New System.Drawing.Point(769, 83)
         Me.Label106.Name = "Label106"
         Me.Label106.Size = New System.Drawing.Size(82, 15)
         Me.Label106.TabIndex = 248
@@ -5588,7 +5604,7 @@ Partial Class Batch
         '
         Me.TXTPREITEMCODE.BackColor = System.Drawing.Color.Linen
         Me.TXTPREITEMCODE.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTPREITEMCODE.Location = New System.Drawing.Point(851, 78)
+        Me.TXTPREITEMCODE.Location = New System.Drawing.Point(851, 80)
         Me.TXTPREITEMCODE.MaxLength = 100
         Me.TXTPREITEMCODE.Name = "TXTPREITEMCODE"
         Me.TXTPREITEMCODE.ReadOnly = True
@@ -5792,7 +5808,7 @@ Partial Class Batch
         '
         Me.DTJOBDOCKETDATE.Enabled = False
         Me.DTJOBDOCKETDATE.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DTJOBDOCKETDATE.Location = New System.Drawing.Point(999, 78)
+        Me.DTJOBDOCKETDATE.Location = New System.Drawing.Point(999, 81)
         Me.DTJOBDOCKETDATE.Name = "DTJOBDOCKETDATE"
         Me.DTJOBDOCKETDATE.Size = New System.Drawing.Size(86, 23)
         Me.DTJOBDOCKETDATE.TabIndex = 586
@@ -5803,7 +5819,7 @@ Partial Class Batch
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(964, 82)
+        Me.Label2.Location = New System.Drawing.Point(964, 85)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(32, 15)
         Me.Label2.TabIndex = 587
@@ -5812,7 +5828,7 @@ Partial Class Batch
         'TXTJOBDOCKETNO
         '
         Me.TXTJOBDOCKETNO.BackColor = System.Drawing.Color.Linen
-        Me.TXTJOBDOCKETNO.Location = New System.Drawing.Point(999, 50)
+        Me.TXTJOBDOCKETNO.Location = New System.Drawing.Point(999, 55)
         Me.TXTJOBDOCKETNO.MaxLength = 100
         Me.TXTJOBDOCKETNO.Name = "TXTJOBDOCKETNO"
         Me.TXTJOBDOCKETNO.ReadOnly = True
@@ -5825,7 +5841,7 @@ Partial Class Batch
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(914, 54)
+        Me.Label3.Location = New System.Drawing.Point(914, 59)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(86, 15)
         Me.Label3.TabIndex = 585
@@ -5834,7 +5850,7 @@ Partial Class Batch
         'DTBATCHDATE
         '
         Me.DTBATCHDATE.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DTBATCHDATE.Location = New System.Drawing.Point(1149, 78)
+        Me.DTBATCHDATE.Location = New System.Drawing.Point(1149, 82)
         Me.DTBATCHDATE.Name = "DTBATCHDATE"
         Me.DTBATCHDATE.Size = New System.Drawing.Size(86, 23)
         Me.DTBATCHDATE.TabIndex = 0
@@ -5844,7 +5860,7 @@ Partial Class Batch
         Me.Label27.AutoSize = True
         Me.Label27.BackColor = System.Drawing.Color.Transparent
         Me.Label27.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label27.Location = New System.Drawing.Point(1114, 82)
+        Me.Label27.Location = New System.Drawing.Point(1114, 86)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(32, 15)
         Me.Label27.TabIndex = 583
@@ -5853,7 +5869,7 @@ Partial Class Batch
         'TXTBATCHNO
         '
         Me.TXTBATCHNO.BackColor = System.Drawing.Color.Linen
-        Me.TXTBATCHNO.Location = New System.Drawing.Point(1149, 50)
+        Me.TXTBATCHNO.Location = New System.Drawing.Point(1149, 55)
         Me.TXTBATCHNO.MaxLength = 100
         Me.TXTBATCHNO.Name = "TXTBATCHNO"
         Me.TXTBATCHNO.Size = New System.Drawing.Size(86, 23)
@@ -5865,7 +5881,7 @@ Partial Class Batch
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(1088, 54)
+        Me.Label1.Location = New System.Drawing.Point(1088, 59)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(59, 15)
         Me.Label1.TabIndex = 581
@@ -5874,7 +5890,7 @@ Partial Class Batch
         'TXTBARCODE
         '
         Me.TXTBARCODE.BackColor = System.Drawing.Color.White
-        Me.TXTBARCODE.Location = New System.Drawing.Point(1149, 107)
+        Me.TXTBARCODE.Location = New System.Drawing.Point(1149, 109)
         Me.TXTBARCODE.MaxLength = 100
         Me.TXTBARCODE.Name = "TXTBARCODE"
         Me.TXTBARCODE.Size = New System.Drawing.Size(86, 23)
@@ -5886,7 +5902,7 @@ Partial Class Batch
         Me.Label65.AutoSize = True
         Me.Label65.BackColor = System.Drawing.Color.Transparent
         Me.Label65.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label65.Location = New System.Drawing.Point(1094, 111)
+        Me.Label65.Location = New System.Drawing.Point(1094, 113)
         Me.Label65.Name = "Label65"
         Me.Label65.Size = New System.Drawing.Size(52, 15)
         Me.Label65.TabIndex = 579
@@ -7140,6 +7156,100 @@ Partial Class Batch
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'TXTBUNDEL
+        '
+        Me.TXTBUNDEL.BackColor = System.Drawing.Color.Linen
+        Me.TXTBUNDEL.Location = New System.Drawing.Point(851, 55)
+        Me.TXTBUNDEL.Name = "TXTBUNDEL"
+        Me.TXTBUNDEL.ReadOnly = True
+        Me.TXTBUNDEL.Size = New System.Drawing.Size(62, 23)
+        Me.TXTBUNDEL.TabIndex = 1144
+        Me.TXTBUNDEL.TabStop = False
+        '
+        'Label139
+        '
+        Me.Label139.AutoSize = True
+        Me.Label139.BackColor = System.Drawing.Color.Transparent
+        Me.Label139.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label139.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label139.Location = New System.Drawing.Point(803, 60)
+        Me.Label139.Name = "Label139"
+        Me.Label139.Size = New System.Drawing.Size(45, 15)
+        Me.Label139.TabIndex = 1145
+        Me.Label139.Text = "Bundel"
+        Me.Label139.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label143
+        '
+        Me.Label143.AutoSize = True
+        Me.Label143.BackColor = System.Drawing.Color.Transparent
+        Me.Label143.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label143.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label143.Location = New System.Drawing.Point(798, 34)
+        Me.Label143.Name = "Label143"
+        Me.Label143.Size = New System.Drawing.Size(51, 15)
+        Me.Label143.TabIndex = 1147
+        Me.Label143.Text = "Box Size"
+        Me.Label143.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'TXTBOXSIZE
+        '
+        Me.TXTBOXSIZE.BackColor = System.Drawing.Color.Linen
+        Me.TXTBOXSIZE.Location = New System.Drawing.Point(851, 29)
+        Me.TXTBOXSIZE.Name = "TXTBOXSIZE"
+        Me.TXTBOXSIZE.ReadOnly = True
+        Me.TXTBOXSIZE.Size = New System.Drawing.Size(62, 23)
+        Me.TXTBOXSIZE.TabIndex = 1146
+        Me.TXTBOXSIZE.TabStop = False
+        '
+        'Label157
+        '
+        Me.Label157.AutoSize = True
+        Me.Label157.BackColor = System.Drawing.Color.Transparent
+        Me.Label157.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label157.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label157.Location = New System.Drawing.Point(944, 34)
+        Me.Label157.Name = "Label157"
+        Me.Label157.Size = New System.Drawing.Size(53, 15)
+        Me.Label157.TabIndex = 1149
+        Me.Label157.Text = "Box Req."
+        Me.Label157.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'TXTBOXREQ
+        '
+        Me.TXTBOXREQ.BackColor = System.Drawing.Color.Linen
+        Me.TXTBOXREQ.Location = New System.Drawing.Point(999, 29)
+        Me.TXTBOXREQ.Name = "TXTBOXREQ"
+        Me.TXTBOXREQ.ReadOnly = True
+        Me.TXTBOXREQ.Size = New System.Drawing.Size(86, 23)
+        Me.TXTBOXREQ.TabIndex = 1148
+        Me.TXTBOXREQ.TabStop = False
+        Me.TXTBOXREQ.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label158
+        '
+        Me.Label158.AutoSize = True
+        Me.Label158.BackColor = System.Drawing.Color.Transparent
+        Me.Label158.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label158.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label158.Location = New System.Drawing.Point(1091, 32)
+        Me.Label158.Name = "Label158"
+        Me.Label158.Size = New System.Drawing.Size(56, 15)
+        Me.Label158.TabIndex = 1151
+        Me.Label158.Text = "Tray Req."
+        Me.Label158.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'TXTTRAYREQ
+        '
+        Me.TXTTRAYREQ.BackColor = System.Drawing.Color.Linen
+        Me.TXTTRAYREQ.Location = New System.Drawing.Point(1149, 27)
+        Me.TXTTRAYREQ.Name = "TXTTRAYREQ"
+        Me.TXTTRAYREQ.ReadOnly = True
+        Me.TXTTRAYREQ.Size = New System.Drawing.Size(86, 23)
+        Me.TXTTRAYREQ.TabIndex = 1150
+        Me.TXTTRAYREQ.TabStop = False
+        Me.TXTTRAYREQ.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
         'Batch
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -7766,4 +7876,12 @@ Partial Class Batch
     Friend WithEvents CheckBox27 As CheckBox
     Friend WithEvents CheckBox26 As CheckBox
     Friend WithEvents CheckBox25 As CheckBox
+    Friend WithEvents Label158 As Label
+    Friend WithEvents TXTTRAYREQ As TextBox
+    Friend WithEvents Label157 As Label
+    Friend WithEvents TXTBOXREQ As TextBox
+    Friend WithEvents Label143 As Label
+    Friend WithEvents TXTBOXSIZE As TextBox
+    Friend WithEvents Label139 As Label
+    Friend WithEvents TXTBUNDEL As TextBox
 End Class

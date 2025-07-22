@@ -989,6 +989,9 @@ LINE1:
                 LBLOPENSIZE.Visible = True
                 TXTCLOSESIZE.Visible = True
                 TXTOPENSIZE.Visible = True
+                TXTCLOSESIZE.ReadOnly = True
+                TXTOPENSIZE.ReadOnly = True
+
 
 
 
