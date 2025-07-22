@@ -74,8 +74,8 @@ Public Class AssemblyQc
         TXTQCPAPER.Clear()
         TXTQCGSM.Clear()
         TXTQCGRAIN.Clear()
-        TXTQCTEXT.Visible = False
-        TXTQCPHARMA.Visible = False
+        TXTQCTEXT.Clear()
+        TXTQCPHARMA.Clear()
         TXTQCUPS.Clear()
         TXTQCVISUAL.Clear()
         TXTQCCOLOR.Clear()
@@ -309,6 +309,8 @@ LINE1:
                         txtshippertotal2.Text = Val(DR("SHIPPERTOTAL2"))
                         txtshippertotal3.Text = Val(DR("SHIPPERTOTAL3"))
                         txtstotal.Text = Val(DR("STOTAL"))
+                        TXTINKDETAILS.Text = DR("INKDETAILS")
+
 
 
 
