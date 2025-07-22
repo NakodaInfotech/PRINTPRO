@@ -104,6 +104,25 @@ Public Class SelectStock
 
                 '    Exit Sub
                 'End If
+
+
+                Dim n As String = ""
+                For i As Integer = 0 To gridbill.RowCount - 1
+                    Dim dtrow As DataRow = gridbill.GetDataRow(i)
+                    If Convert.ToBoolean(dtrow("CHK")) = True Then
+                        If n <> "" Then
+                            If n = (dtrow("CHALLANNO")) Then
+                                GoTo Line1
+                            Else
+                                MsgBox("Pls select same Challan No Stocks !")
+                                Exit Sub
+                            End If
+                        End If
+Line1:
+                        n = (dtrow("CHALLANNO"))
+                    End If
+                Next
+
                 DT.Columns.Add("ITEMNAME")
                 DT.Columns.Add("PAPERGSM")
                 DT.Columns.Add("LOTNO")
