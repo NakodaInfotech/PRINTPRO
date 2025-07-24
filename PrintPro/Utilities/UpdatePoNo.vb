@@ -40,7 +40,7 @@ Public Class UpdatePoNo
             Dim OBJCMN As New ClsCommon
             Dim DT As DataTable = OBJCMN.search("ISNULL(ORDERMASTER.ORDER_NO, '') AS ORDERNO, ISNULL(LEDGERS.Acc_cmpname, '') AS NAME", "", " ORDERMASTER INNER JOIN LEDGERS ON ORDERMASTER.ORDER_LEDGERID = LEDGERS.Acc_id AND ORDERMASTER.ORDER_YEARID = LEDGERS.Acc_yearid", " AND ORDERMASTER.ORDER_NO = '" & TXTSRNO.Text.Trim & "' AND ORDERMASTER.ORDER_YEARID = " & YearId)
             If DT.Rows.Count > 0 Then
-                DT = OBJCMN.Execute_Any_String(" UPDATE ORDERMASTER SET ORDER_PONO = '" & TXTNEWPONO.Text.Trim & "' WHERE ORDER_NO = " & Val(TXTSRNO.Text.Trim) & " AND ORDER_YEARID = " & YearId, "", "")
+                DT = OBJCMN.Execute_Any_String(" UPDATE ORDERMASTER SET ORDER_PONO = '" & TXTNEWPONO.Text.Trim & "' , ORDER_PODATE = '" & NEWPODATE.Text & "' WHERE ORDER_NO = " & Val(TXTSRNO.Text.Trim) & " AND ORDER_YEARID = " & YearId, "", "")
                 DT = OBJCMN.Execute_Any_String(" UPDATE JOBBATCHMASTER SET job_pono = '" & TXTNEWPONO.Text.Trim & "' WHERE job_orderno = " & Val(TXTSRNO.Text.Trim) & " AND JOB_YEARID = " & YearId, "", "")
                 DT = OBJCMN.Execute_Any_String(" UPDATE BATCHMASTER SET JOBBATCH_PONO = '" & TXTNEWPONO.Text.Trim & "' WHERE JOBBATCH_ORDERNO = " & Val(TXTSRNO.Text.Trim) & " AND JOBBATCH_YEARID = " & YearId, "", "")
             End If
@@ -97,10 +97,13 @@ Public Class UpdatePoNo
 
                 'GET ORDER DETAILS W.R.T ORDER NO
                 Dim OBJCMN As New ClsCommon
-                Dim DT As DataTable = OBJCMN.search(" ISNULL(ORDERMASTER.ORDER_PONO, '') AS PONO, ISNULL(LEDGERS.Acc_cmpname, '') AS NAME ", "", " ORDERMASTER INNER JOIN LEDGERS ON ORDERMASTER.ORDER_LEDGERID = LEDGERS.Acc_id AND ORDERMASTER.ORDER_YEARID = LEDGERS.Acc_yearid", " AND ORDERMASTER.ORDER_NO = " & Val(TXTSRNO.Text.Trim) & " AND ORDERMASTER.ORDER_YEARID = " & YearId)
+                Dim DT As DataTable = OBJCMN.search(" ISNULL(ORDERMASTER.ORDER_PONO, '') AS PONO, ORDERMASTER.ORDER_PODATE AS PODATE , ISNULL(LEDGERS.Acc_cmpname, '') AS NAME ", "", " ORDERMASTER INNER JOIN LEDGERS ON ORDERMASTER.ORDER_LEDGERID = LEDGERS.Acc_id AND ORDERMASTER.ORDER_YEARID = LEDGERS.Acc_yearid", " AND ORDERMASTER.ORDER_NO = " & Val(TXTSRNO.Text.Trim) & " AND ORDERMASTER.ORDER_YEARID = " & YearId)
                 If DT.Rows.Count > 0 Then
                     TXTNAME.Text = DT.Rows(0).Item("NAME")
                     TXTOLDPONO.Text = DT.Rows(0).Item("PONO")
+                    PODATE.Value = DT.Rows(0).Item("PODATE")
+                    NEWPODATE.Value = DT.Rows(0).Item("PODATE")
+
                 End If
             End If
         Catch ex As Exception
@@ -115,6 +118,8 @@ Public Class UpdatePoNo
             Throw ex
         End Try
     End Sub
+
+
 
 
 

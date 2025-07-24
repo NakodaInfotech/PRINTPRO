@@ -24,6 +24,14 @@ Partial Class UpdatePoNo
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.BlendPanel1 = New VbPowerPack.BlendPanel()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.NEWPODATE = New System.Windows.Forms.DateTimePicker()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.PODATE = New System.Windows.Forms.DateTimePicker()
+        Me.TXTNEWPONO = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TXTOLDPONO = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.TXTNAME = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TXTSRNO = New System.Windows.Forms.TextBox()
@@ -32,10 +40,6 @@ Partial Class UpdatePoNo
         Me.CMDUPDATE = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.EP = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.TXTNEWPONO = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TXTOLDPONO = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.BlendPanel1.SuspendLayout()
         CType(Me.EP, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -43,6 +47,10 @@ Partial Class UpdatePoNo
         'BlendPanel1
         '
         Me.BlendPanel1.Blend = New VbPowerPack.BlendFill(VbPowerPack.BlendStyle.Vertical, System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(248, Byte), Integer)), System.Drawing.SystemColors.Window)
+        Me.BlendPanel1.Controls.Add(Me.Label6)
+        Me.BlendPanel1.Controls.Add(Me.NEWPODATE)
+        Me.BlendPanel1.Controls.Add(Me.Label5)
+        Me.BlendPanel1.Controls.Add(Me.PODATE)
         Me.BlendPanel1.Controls.Add(Me.TXTNEWPONO)
         Me.BlendPanel1.Controls.Add(Me.Label3)
         Me.BlendPanel1.Controls.Add(Me.TXTOLDPONO)
@@ -57,8 +65,87 @@ Partial Class UpdatePoNo
         Me.BlendPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BlendPanel1.Location = New System.Drawing.Point(0, 0)
         Me.BlendPanel1.Name = "BlendPanel1"
-        Me.BlendPanel1.Size = New System.Drawing.Size(393, 233)
+        Me.BlendPanel1.Size = New System.Drawing.Size(393, 262)
         Me.BlendPanel1.TabIndex = 1
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(28, 178)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(77, 15)
+        Me.Label6.TabIndex = 841
+        Me.Label6.Text = "New PO Date"
+        '
+        'NEWPODATE
+        '
+        Me.NEWPODATE.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.NEWPODATE.Location = New System.Drawing.Point(105, 174)
+        Me.NEWPODATE.Name = "NEWPODATE"
+        Me.NEWPODATE.Size = New System.Drawing.Size(87, 23)
+        Me.NEWPODATE.TabIndex = 840
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(28, 120)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(74, 15)
+        Me.Label5.TabIndex = 839
+        Me.Label5.Text = "Old PO Date"
+        '
+        'PODATE
+        '
+        Me.PODATE.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.PODATE.Location = New System.Drawing.Point(105, 116)
+        Me.PODATE.Name = "PODATE"
+        Me.PODATE.Size = New System.Drawing.Size(87, 23)
+        Me.PODATE.TabIndex = 838
+        '
+        'TXTNEWPONO
+        '
+        Me.TXTNEWPONO.BackColor = System.Drawing.Color.LemonChiffon
+        Me.TXTNEWPONO.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXTNEWPONO.Location = New System.Drawing.Point(105, 145)
+        Me.TXTNEWPONO.Name = "TXTNEWPONO"
+        Me.TXTNEWPONO.Size = New System.Drawing.Size(250, 23)
+        Me.TXTNEWPONO.TabIndex = 835
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(35, 148)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(67, 15)
+        Me.Label3.TabIndex = 837
+        Me.Label3.Text = "New PO No"
+        '
+        'TXTOLDPONO
+        '
+        Me.TXTOLDPONO.BackColor = System.Drawing.Color.Linen
+        Me.TXTOLDPONO.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXTOLDPONO.Location = New System.Drawing.Point(105, 87)
+        Me.TXTOLDPONO.Name = "TXTOLDPONO"
+        Me.TXTOLDPONO.ReadOnly = True
+        Me.TXTOLDPONO.Size = New System.Drawing.Size(250, 23)
+        Me.TXTOLDPONO.TabIndex = 834
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(38, 91)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(64, 15)
+        Me.Label4.TabIndex = 836
+        Me.Label4.Text = "Old PO No"
         '
         'TXTNAME
         '
@@ -94,7 +181,7 @@ Partial Class UpdatePoNo
         '
         'CMDEXIT
         '
-        Me.CMDEXIT.Location = New System.Drawing.Point(263, 170)
+        Me.CMDEXIT.Location = New System.Drawing.Point(263, 216)
         Me.CMDEXIT.Name = "CMDEXIT"
         Me.CMDEXIT.Size = New System.Drawing.Size(93, 32)
         Me.CMDEXIT.TabIndex = 6
@@ -103,7 +190,7 @@ Partial Class UpdatePoNo
         '
         'CMDCLEAR
         '
-        Me.CMDCLEAR.Location = New System.Drawing.Point(163, 170)
+        Me.CMDCLEAR.Location = New System.Drawing.Point(163, 216)
         Me.CMDCLEAR.Name = "CMDCLEAR"
         Me.CMDCLEAR.Size = New System.Drawing.Size(93, 32)
         Me.CMDCLEAR.TabIndex = 5
@@ -112,7 +199,7 @@ Partial Class UpdatePoNo
         '
         'CMDUPDATE
         '
-        Me.CMDUPDATE.Location = New System.Drawing.Point(62, 170)
+        Me.CMDUPDATE.Location = New System.Drawing.Point(62, 216)
         Me.CMDUPDATE.Name = "CMDUPDATE"
         Me.CMDUPDATE.Size = New System.Drawing.Size(93, 32)
         Me.CMDUPDATE.TabIndex = 4
@@ -136,51 +223,10 @@ Partial Class UpdatePoNo
         Me.EP.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink
         Me.EP.ContainerControl = Me
         '
-        'TXTNEWPONO
-        '
-        Me.TXTNEWPONO.BackColor = System.Drawing.Color.LemonChiffon
-        Me.TXTNEWPONO.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTNEWPONO.Location = New System.Drawing.Point(105, 121)
-        Me.TXTNEWPONO.Name = "TXTNEWPONO"
-        Me.TXTNEWPONO.Size = New System.Drawing.Size(250, 23)
-        Me.TXTNEWPONO.TabIndex = 835
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(35, 124)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(67, 15)
-        Me.Label3.TabIndex = 837
-        Me.Label3.Text = "New PO No"
-        '
-        'TXTOLDPONO
-        '
-        Me.TXTOLDPONO.BackColor = System.Drawing.Color.Linen
-        Me.TXTOLDPONO.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTOLDPONO.Location = New System.Drawing.Point(105, 87)
-        Me.TXTOLDPONO.Name = "TXTOLDPONO"
-        Me.TXTOLDPONO.ReadOnly = True
-        Me.TXTOLDPONO.Size = New System.Drawing.Size(250, 23)
-        Me.TXTOLDPONO.TabIndex = 834
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(38, 91)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(64, 15)
-        Me.Label4.TabIndex = 836
-        Me.Label4.Text = "Old PO No"
-        '
         'UpdatePoNo
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
-        Me.ClientSize = New System.Drawing.Size(393, 233)
+        Me.ClientSize = New System.Drawing.Size(393, 262)
         Me.Controls.Add(Me.BlendPanel1)
         Me.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.KeyPreview = True
@@ -208,4 +254,8 @@ Partial Class UpdatePoNo
     Friend WithEvents Label3 As Label
     Friend WithEvents TXTOLDPONO As TextBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents PODATE As DateTimePicker
+    Friend WithEvents Label6 As Label
+    Friend WithEvents NEWPODATE As DateTimePicker
 End Class
