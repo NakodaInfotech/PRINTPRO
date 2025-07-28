@@ -45,7 +45,7 @@ Public Class DebitNoteReportA5
     
     Public Overrides Property FullResourceName() As String
         Get
-            Return "TEXTRADE.DebitNoteReportA5.rpt"
+            Return "PrintPro.DebitNoteReportA5.rpt"
         End Get
         Set
             'Do nothing

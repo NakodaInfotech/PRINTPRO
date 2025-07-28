@@ -45,7 +45,7 @@ Public Class PaymentBillWise
     
     Public Overrides Property FullResourceName() As String
         Get
-            Return "TEXTRADE.PaymentBillWise.rpt"
+            Return "PrintPro.PaymentBillWise.rpt"
         End Get
         Set
             'Do nothing

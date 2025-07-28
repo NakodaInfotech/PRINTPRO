@@ -45,7 +45,7 @@ Public Class CreditNoteReportA5
     
     Public Overrides Property FullResourceName() As String
         Get
-            Return "TEXTRADE.CreditNoteReportA5.rpt"
+            Return "PrintPro.CreditNoteReportA5.rpt"
         End Get
         Set
             'Do nothing

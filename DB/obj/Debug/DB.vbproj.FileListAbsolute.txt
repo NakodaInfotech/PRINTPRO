@@ -7,3 +7,13 @@ D:\VSS\PRINTPRO\DB\obj\Debug\DB.vbproj.GenerateResource.Cache
 D:\VSS\PRINTPRO\DB\obj\Debug\DB.dll
 D:\VSS\PRINTPRO\DB\obj\Debug\DB.xml
 D:\VSS\PRINTPRO\DB\obj\Debug\DB.pdb
+D:\GIT\PRINTPRO\DB\bin\Debug\DB.dll
+D:\GIT\PRINTPRO\DB\bin\Debug\DB.pdb
+D:\GIT\PRINTPRO\DB\bin\Debug\DB.xml
+D:\GIT\PRINTPRO\DB\obj\Debug\DB.vbproj.AssemblyReference.cache
+D:\GIT\PRINTPRO\DB\obj\Debug\DB.Resources.resources
+D:\GIT\PRINTPRO\DB\obj\Debug\DB.vbproj.GenerateResource.cache
+D:\GIT\PRINTPRO\DB\obj\Debug\DB.vbproj.CoreCompileInputs.cache
+D:\GIT\PRINTPRO\DB\obj\Debug\DB.dll
+D:\GIT\PRINTPRO\DB\obj\Debug\DB.xml
+D:\GIT\PRINTPRO\DB\obj\Debug\DB.pdb
