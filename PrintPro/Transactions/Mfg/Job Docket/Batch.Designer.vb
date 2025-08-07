@@ -33,6 +33,14 @@ Partial Class Batch
         Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BlendPanel1 = New VbPowerPack.BlendPanel()
+        Me.Label158 = New System.Windows.Forms.Label()
+        Me.TXTTRAYREQ = New System.Windows.Forms.TextBox()
+        Me.Label157 = New System.Windows.Forms.Label()
+        Me.TXTBOXREQ = New System.Windows.Forms.TextBox()
+        Me.Label143 = New System.Windows.Forms.Label()
+        Me.TXTBOXSIZE = New System.Windows.Forms.TextBox()
+        Me.Label139 = New System.Windows.Forms.Label()
+        Me.TXTBUNDEL = New System.Windows.Forms.TextBox()
         Me.LBLASSEBLYDONE = New System.Windows.Forms.Label()
         Me.TXTORDERTYPE = New System.Windows.Forms.TextBox()
         Me.Label132 = New System.Windows.Forms.Label()
@@ -607,36 +615,34 @@ Partial Class Batch
         Me.txtpartyname = New System.Windows.Forms.TextBox()
         Me.EP = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.TXTBUNDEL = New System.Windows.Forms.TextBox()
-        Me.Label139 = New System.Windows.Forms.Label()
-        Me.Label143 = New System.Windows.Forms.Label()
-        Me.TXTBOXSIZE = New System.Windows.Forms.TextBox()
-        Me.Label157 = New System.Windows.Forms.Label()
-        Me.TXTBOXREQ = New System.Windows.Forms.TextBox()
-        Me.Label158 = New System.Windows.Forms.Label()
-        Me.TXTTRAYREQ = New System.Windows.Forms.TextBox()
-        Me.BlendPanel1.SuspendLayout()
-        Me.GROUPFOLDING.SuspendLayout()
-        Me.GROUPFINAL.SuspendLayout()
-        Me.GROUPUNFOLD.SuspendLayout()
-        Me.GROUPSORTING.SuspendLayout()
-        Me.GROUPPRINT.SuspendLayout()
-        Me.GROUPPOSITIVE.SuspendLayout()
-        Me.GROUPPLATE.SuspendLayout()
-        Me.GROUPPACKING.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        Me.GroupBox5.SuspendLayout()
-        Me.GROUPCUTTING.SuspendLayout()
-        CType(Me.PBlock, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabControl1.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
-        CType(Me.gridjob, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPage2.SuspendLayout()
-        CType(Me.PBSOFTCOPY, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.gridupload, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ToolStrip1.SuspendLayout()
-        CType(Me.EP, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
+        Me.TXTPRINTINGSHIFT3 = New System.Windows.Forms.TextBox()
+        Me.TXTPRINTINGSHIFT2 = New System.Windows.Forms.TextBox()
+        Me.TXTPRINTINGSHIFT1 = New System.Windows.Forms.TextBox()
+        Me.Label159 = New System.Windows.Forms.Label()
+        Me.Label160 = New System.Windows.Forms.Label()
+        Me.Label161 = New System.Windows.Forms.Label()
+        Me.BlendPanel1.SuspendLayout
+        Me.GROUPFOLDING.SuspendLayout
+        Me.GROUPFINAL.SuspendLayout
+        Me.GROUPUNFOLD.SuspendLayout
+        Me.GROUPSORTING.SuspendLayout
+        Me.GROUPPRINT.SuspendLayout
+        Me.GROUPPOSITIVE.SuspendLayout
+        Me.GROUPPLATE.SuspendLayout
+        Me.GROUPPACKING.SuspendLayout
+        Me.GroupBox3.SuspendLayout
+        Me.GroupBox5.SuspendLayout
+        Me.GROUPCUTTING.SuspendLayout
+        CType(Me.PBlock, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.TabControl1.SuspendLayout
+        Me.TabPage1.SuspendLayout
+        CType(Me.gridjob, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.TabPage2.SuspendLayout
+        CType(Me.PBSOFTCOPY, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.gridupload, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.ToolStrip1.SuspendLayout
+        CType(Me.EP, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SuspendLayout
         '
         'BlendPanel1
         '
@@ -736,6 +742,100 @@ Partial Class Batch
         Me.BlendPanel1.Name = "BlendPanel1"
         Me.BlendPanel1.Size = New System.Drawing.Size(1370, 611)
         Me.BlendPanel1.TabIndex = 1
+        '
+        'Label158
+        '
+        Me.Label158.AutoSize = True
+        Me.Label158.BackColor = System.Drawing.Color.Transparent
+        Me.Label158.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label158.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label158.Location = New System.Drawing.Point(1091, 32)
+        Me.Label158.Name = "Label158"
+        Me.Label158.Size = New System.Drawing.Size(56, 15)
+        Me.Label158.TabIndex = 1151
+        Me.Label158.Text = "Tray Req."
+        Me.Label158.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'TXTTRAYREQ
+        '
+        Me.TXTTRAYREQ.BackColor = System.Drawing.Color.Linen
+        Me.TXTTRAYREQ.Location = New System.Drawing.Point(1149, 27)
+        Me.TXTTRAYREQ.Name = "TXTTRAYREQ"
+        Me.TXTTRAYREQ.ReadOnly = True
+        Me.TXTTRAYREQ.Size = New System.Drawing.Size(86, 23)
+        Me.TXTTRAYREQ.TabIndex = 1150
+        Me.TXTTRAYREQ.TabStop = False
+        Me.TXTTRAYREQ.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label157
+        '
+        Me.Label157.AutoSize = True
+        Me.Label157.BackColor = System.Drawing.Color.Transparent
+        Me.Label157.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label157.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label157.Location = New System.Drawing.Point(944, 34)
+        Me.Label157.Name = "Label157"
+        Me.Label157.Size = New System.Drawing.Size(53, 15)
+        Me.Label157.TabIndex = 1149
+        Me.Label157.Text = "Box Req."
+        Me.Label157.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'TXTBOXREQ
+        '
+        Me.TXTBOXREQ.BackColor = System.Drawing.Color.Linen
+        Me.TXTBOXREQ.Location = New System.Drawing.Point(999, 29)
+        Me.TXTBOXREQ.Name = "TXTBOXREQ"
+        Me.TXTBOXREQ.ReadOnly = True
+        Me.TXTBOXREQ.Size = New System.Drawing.Size(86, 23)
+        Me.TXTBOXREQ.TabIndex = 1148
+        Me.TXTBOXREQ.TabStop = False
+        Me.TXTBOXREQ.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label143
+        '
+        Me.Label143.AutoSize = True
+        Me.Label143.BackColor = System.Drawing.Color.Transparent
+        Me.Label143.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label143.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label143.Location = New System.Drawing.Point(798, 34)
+        Me.Label143.Name = "Label143"
+        Me.Label143.Size = New System.Drawing.Size(51, 15)
+        Me.Label143.TabIndex = 1147
+        Me.Label143.Text = "Box Size"
+        Me.Label143.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'TXTBOXSIZE
+        '
+        Me.TXTBOXSIZE.BackColor = System.Drawing.Color.Linen
+        Me.TXTBOXSIZE.Location = New System.Drawing.Point(851, 29)
+        Me.TXTBOXSIZE.Name = "TXTBOXSIZE"
+        Me.TXTBOXSIZE.ReadOnly = True
+        Me.TXTBOXSIZE.Size = New System.Drawing.Size(62, 23)
+        Me.TXTBOXSIZE.TabIndex = 1146
+        Me.TXTBOXSIZE.TabStop = False
+        '
+        'Label139
+        '
+        Me.Label139.AutoSize = True
+        Me.Label139.BackColor = System.Drawing.Color.Transparent
+        Me.Label139.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label139.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label139.Location = New System.Drawing.Point(803, 60)
+        Me.Label139.Name = "Label139"
+        Me.Label139.Size = New System.Drawing.Size(45, 15)
+        Me.Label139.TabIndex = 1145
+        Me.Label139.Text = "Bundel"
+        Me.Label139.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'TXTBUNDEL
+        '
+        Me.TXTBUNDEL.BackColor = System.Drawing.Color.Linen
+        Me.TXTBUNDEL.Location = New System.Drawing.Point(851, 55)
+        Me.TXTBUNDEL.Name = "TXTBUNDEL"
+        Me.TXTBUNDEL.ReadOnly = True
+        Me.TXTBUNDEL.Size = New System.Drawing.Size(62, 23)
+        Me.TXTBUNDEL.TabIndex = 1144
+        Me.TXTBUNDEL.TabStop = False
         '
         'LBLASSEBLYDONE
         '
@@ -1775,7 +1875,7 @@ Partial Class Batch
         Me.GROUPFINAL.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GROUPFINAL.Location = New System.Drawing.Point(25, 124)
         Me.GROUPFINAL.Name = "GROUPFINAL"
-        Me.GROUPFINAL.Size = New System.Drawing.Size(766, 330)
+        Me.GROUPFINAL.Size = New System.Drawing.Size(764, 330)
         Me.GROUPFINAL.TabIndex = 12
         Me.GROUPFINAL.TabStop = False
         Me.GROUPFINAL.Visible = False
@@ -2913,6 +3013,12 @@ Partial Class Batch
         'GROUPPRINT
         '
         Me.GROUPPRINT.BackColor = System.Drawing.Color.Transparent
+        Me.GROUPPRINT.Controls.Add(Me.Label161)
+        Me.GROUPPRINT.Controls.Add(Me.Label160)
+        Me.GROUPPRINT.Controls.Add(Me.Label159)
+        Me.GROUPPRINT.Controls.Add(Me.TXTPRINTINGSHIFT1)
+        Me.GROUPPRINT.Controls.Add(Me.TXTPRINTINGSHIFT2)
+        Me.GROUPPRINT.Controls.Add(Me.TXTPRINTINGSHIFT3)
         Me.GROUPPRINT.Controls.Add(Me.CheckBox33)
         Me.GROUPPRINT.Controls.Add(Me.CheckBox32)
         Me.GROUPPRINT.Controls.Add(Me.CheckBox31)
@@ -3144,7 +3250,7 @@ Partial Class Batch
         Me.CMBPRINTTYPE.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CMBPRINTTYPE.FormattingEnabled = True
         Me.CMBPRINTTYPE.Items.AddRange(New Object() {"SB", "FB", "DG", "ONE SIDE"})
-        Me.CMBPRINTTYPE.Location = New System.Drawing.Point(396, 17)
+        Me.CMBPRINTTYPE.Location = New System.Drawing.Point(327, 15)
         Me.CMBPRINTTYPE.Name = "CMBPRINTTYPE"
         Me.CMBPRINTTYPE.Size = New System.Drawing.Size(87, 23)
         Me.CMBPRINTTYPE.TabIndex = 8
@@ -3154,9 +3260,9 @@ Partial Class Batch
         Me.Label127.BackColor = System.Drawing.Color.Transparent
         Me.Label127.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label127.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label127.Location = New System.Drawing.Point(281, 21)
+        Me.Label127.Location = New System.Drawing.Point(254, 19)
         Me.Label127.Name = "Label127"
-        Me.Label127.Size = New System.Drawing.Size(110, 14)
+        Me.Label127.Size = New System.Drawing.Size(68, 14)
         Me.Label127.TabIndex = 338
         Me.Label127.Text = "Plate Type"
         Me.Label127.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -7156,99 +7262,80 @@ Partial Class Batch
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
-        'TXTBUNDEL
+        'TXTPRINTINGSHIFT3
         '
-        Me.TXTBUNDEL.BackColor = System.Drawing.Color.Linen
-        Me.TXTBUNDEL.Location = New System.Drawing.Point(851, 55)
-        Me.TXTBUNDEL.Name = "TXTBUNDEL"
-        Me.TXTBUNDEL.ReadOnly = True
-        Me.TXTBUNDEL.Size = New System.Drawing.Size(62, 23)
-        Me.TXTBUNDEL.TabIndex = 1144
-        Me.TXTBUNDEL.TabStop = False
+        Me.TXTPRINTINGSHIFT3.BackColor = System.Drawing.SystemColors.Window
+        Me.TXTPRINTINGSHIFT3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TXTPRINTINGSHIFT3.Location = New System.Drawing.Point(697, 13)
+        Me.TXTPRINTINGSHIFT3.MaxLength = 100
+        Me.TXTPRINTINGSHIFT3.Name = "TXTPRINTINGSHIFT3"
+        Me.TXTPRINTINGSHIFT3.Size = New System.Drawing.Size(62, 23)
+        Me.TXTPRINTINGSHIFT3.TabIndex = 1152
+        Me.TXTPRINTINGSHIFT3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.TXTPRINTINGSHIFT3.Visible = False
         '
-        'Label139
+        'TXTPRINTINGSHIFT2
         '
-        Me.Label139.AutoSize = True
-        Me.Label139.BackColor = System.Drawing.Color.Transparent
-        Me.Label139.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label139.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label139.Location = New System.Drawing.Point(803, 60)
-        Me.Label139.Name = "Label139"
-        Me.Label139.Size = New System.Drawing.Size(45, 15)
-        Me.Label139.TabIndex = 1145
-        Me.Label139.Text = "Bundel"
-        Me.Label139.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.TXTPRINTINGSHIFT2.BackColor = System.Drawing.SystemColors.Window
+        Me.TXTPRINTINGSHIFT2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TXTPRINTINGSHIFT2.Location = New System.Drawing.Point(588, 13)
+        Me.TXTPRINTINGSHIFT2.MaxLength = 100
+        Me.TXTPRINTINGSHIFT2.Name = "TXTPRINTINGSHIFT2"
+        Me.TXTPRINTINGSHIFT2.Size = New System.Drawing.Size(62, 23)
+        Me.TXTPRINTINGSHIFT2.TabIndex = 1153
+        Me.TXTPRINTINGSHIFT2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.TXTPRINTINGSHIFT2.Visible = False
         '
-        'Label143
+        'TXTPRINTINGSHIFT1
         '
-        Me.Label143.AutoSize = True
-        Me.Label143.BackColor = System.Drawing.Color.Transparent
-        Me.Label143.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label143.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label143.Location = New System.Drawing.Point(798, 34)
-        Me.Label143.Name = "Label143"
-        Me.Label143.Size = New System.Drawing.Size(51, 15)
-        Me.Label143.TabIndex = 1147
-        Me.Label143.Text = "Box Size"
-        Me.Label143.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.TXTPRINTINGSHIFT1.BackColor = System.Drawing.SystemColors.Window
+        Me.TXTPRINTINGSHIFT1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TXTPRINTINGSHIFT1.Location = New System.Drawing.Point(479, 13)
+        Me.TXTPRINTINGSHIFT1.MaxLength = 100
+        Me.TXTPRINTINGSHIFT1.Name = "TXTPRINTINGSHIFT1"
+        Me.TXTPRINTINGSHIFT1.Size = New System.Drawing.Size(62, 23)
+        Me.TXTPRINTINGSHIFT1.TabIndex = 1152
+        Me.TXTPRINTINGSHIFT1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.TXTPRINTINGSHIFT1.Visible = False
         '
-        'TXTBOXSIZE
+        'Label159
         '
-        Me.TXTBOXSIZE.BackColor = System.Drawing.Color.Linen
-        Me.TXTBOXSIZE.Location = New System.Drawing.Point(851, 29)
-        Me.TXTBOXSIZE.Name = "TXTBOXSIZE"
-        Me.TXTBOXSIZE.ReadOnly = True
-        Me.TXTBOXSIZE.Size = New System.Drawing.Size(62, 23)
-        Me.TXTBOXSIZE.TabIndex = 1146
-        Me.TXTBOXSIZE.TabStop = False
+        Me.Label159.AutoSize = True
+        Me.Label159.BackColor = System.Drawing.Color.Transparent
+        Me.Label159.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label159.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label159.Location = New System.Drawing.Point(435, 18)
+        Me.Label159.Name = "Label159"
+        Me.Label159.Size = New System.Drawing.Size(43, 15)
+        Me.Label159.TabIndex = 1154
+        Me.Label159.Text = "Shift-1"
+        Me.Label159.Visible = False
         '
-        'Label157
+        'Label160
         '
-        Me.Label157.AutoSize = True
-        Me.Label157.BackColor = System.Drawing.Color.Transparent
-        Me.Label157.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label157.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label157.Location = New System.Drawing.Point(944, 34)
-        Me.Label157.Name = "Label157"
-        Me.Label157.Size = New System.Drawing.Size(53, 15)
-        Me.Label157.TabIndex = 1149
-        Me.Label157.Text = "Box Req."
-        Me.Label157.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label160.AutoSize = True
+        Me.Label160.BackColor = System.Drawing.Color.Transparent
+        Me.Label160.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label160.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label160.Location = New System.Drawing.Point(542, 18)
+        Me.Label160.Name = "Label160"
+        Me.Label160.Size = New System.Drawing.Size(43, 15)
+        Me.Label160.TabIndex = 1155
+        Me.Label160.Text = "Shift-2"
+        Me.Label160.Visible = False
         '
-        'TXTBOXREQ
+        'Label161
         '
-        Me.TXTBOXREQ.BackColor = System.Drawing.Color.Linen
-        Me.TXTBOXREQ.Location = New System.Drawing.Point(999, 29)
-        Me.TXTBOXREQ.Name = "TXTBOXREQ"
-        Me.TXTBOXREQ.ReadOnly = True
-        Me.TXTBOXREQ.Size = New System.Drawing.Size(86, 23)
-        Me.TXTBOXREQ.TabIndex = 1148
-        Me.TXTBOXREQ.TabStop = False
-        Me.TXTBOXREQ.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'Label158
-        '
-        Me.Label158.AutoSize = True
-        Me.Label158.BackColor = System.Drawing.Color.Transparent
-        Me.Label158.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label158.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label158.Location = New System.Drawing.Point(1091, 32)
-        Me.Label158.Name = "Label158"
-        Me.Label158.Size = New System.Drawing.Size(56, 15)
-        Me.Label158.TabIndex = 1151
-        Me.Label158.Text = "Tray Req."
-        Me.Label158.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'TXTTRAYREQ
-        '
-        Me.TXTTRAYREQ.BackColor = System.Drawing.Color.Linen
-        Me.TXTTRAYREQ.Location = New System.Drawing.Point(1149, 27)
-        Me.TXTTRAYREQ.Name = "TXTTRAYREQ"
-        Me.TXTTRAYREQ.ReadOnly = True
-        Me.TXTTRAYREQ.Size = New System.Drawing.Size(86, 23)
-        Me.TXTTRAYREQ.TabIndex = 1150
-        Me.TXTTRAYREQ.TabStop = False
-        Me.TXTTRAYREQ.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.Label161.AutoSize = True
+        Me.Label161.BackColor = System.Drawing.Color.Transparent
+        Me.Label161.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label161.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label161.Location = New System.Drawing.Point(652, 18)
+        Me.Label161.Name = "Label161"
+        Me.Label161.Size = New System.Drawing.Size(43, 15)
+        Me.Label161.TabIndex = 1156
+        Me.Label161.Text = "Shift-3"
+        Me.Label161.Visible = False
         '
         'Batch
         '
@@ -7262,40 +7349,40 @@ Partial Class Batch
         Me.Text = "Batch Creation"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.BlendPanel1.ResumeLayout(False)
-        Me.BlendPanel1.PerformLayout()
+        Me.BlendPanel1.PerformLayout
         Me.GROUPFOLDING.ResumeLayout(False)
-        Me.GROUPFOLDING.PerformLayout()
+        Me.GROUPFOLDING.PerformLayout
         Me.GROUPFINAL.ResumeLayout(False)
-        Me.GROUPFINAL.PerformLayout()
+        Me.GROUPFINAL.PerformLayout
         Me.GROUPUNFOLD.ResumeLayout(False)
-        Me.GROUPUNFOLD.PerformLayout()
+        Me.GROUPUNFOLD.PerformLayout
         Me.GROUPSORTING.ResumeLayout(False)
-        Me.GROUPSORTING.PerformLayout()
+        Me.GROUPSORTING.PerformLayout
         Me.GROUPPRINT.ResumeLayout(False)
-        Me.GROUPPRINT.PerformLayout()
+        Me.GROUPPRINT.PerformLayout
         Me.GROUPPOSITIVE.ResumeLayout(False)
-        Me.GROUPPOSITIVE.PerformLayout()
+        Me.GROUPPOSITIVE.PerformLayout
         Me.GROUPPLATE.ResumeLayout(False)
-        Me.GROUPPLATE.PerformLayout()
+        Me.GROUPPLATE.PerformLayout
         Me.GROUPPACKING.ResumeLayout(False)
-        Me.GROUPPACKING.PerformLayout()
+        Me.GROUPPACKING.PerformLayout
         Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
+        Me.GroupBox3.PerformLayout
         Me.GroupBox5.ResumeLayout(False)
-        Me.GroupBox5.PerformLayout()
+        Me.GroupBox5.PerformLayout
         Me.GROUPCUTTING.ResumeLayout(False)
-        Me.GROUPCUTTING.PerformLayout()
-        CType(Me.PBlock, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GROUPCUTTING.PerformLayout
+        CType(Me.PBlock, System.ComponentModel.ISupportInitialize).EndInit
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
-        CType(Me.gridjob, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridjob, System.ComponentModel.ISupportInitialize).EndInit
         Me.TabPage2.ResumeLayout(False)
-        Me.TabPage2.PerformLayout()
-        CType(Me.PBSOFTCOPY, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.gridupload, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage2.PerformLayout
+        CType(Me.PBSOFTCOPY, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.gridupload, System.ComponentModel.ISupportInitialize).EndInit
         Me.ToolStrip1.ResumeLayout(False)
-        Me.ToolStrip1.PerformLayout()
-        CType(Me.EP, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ToolStrip1.PerformLayout
+        CType(Me.EP, System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(False)
 
     End Sub
@@ -7884,4 +7971,10 @@ Partial Class Batch
     Friend WithEvents TXTBOXSIZE As TextBox
     Friend WithEvents Label139 As Label
     Friend WithEvents TXTBUNDEL As TextBox
+    Friend WithEvents Label160 As Label
+    Friend WithEvents Label159 As Label
+    Friend WithEvents TXTPRINTINGSHIFT1 As TextBox
+    Friend WithEvents TXTPRINTINGSHIFT2 As TextBox
+    Friend WithEvents TXTPRINTINGSHIFT3 As TextBox
+    Friend WithEvents Label161 As Label
 End Class
