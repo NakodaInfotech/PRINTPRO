@@ -1331,5 +1331,19 @@ LINE1:
         numkeypress(e, SCHDATE, Me)
     End Sub
 
+    Private Sub CMBITEMCODE_Validated(sender As Object, e As EventArgs) Handles CMBITEMCODE.Validated
+        If CMBITEMCODE.Text.Trim <> "" Then
+            Dim dt As New DataTable
+            Dim OBJCMN As New ClsCommon
+            Dim DTTCS As DataTable = OBJCMN.search("  ISNULL(ITEMMASTER.item_code, '') AS ITEMCODE ", "", " ORDERMASTER_DESC LEFT OUTER JOIN ITEMMASTER ON ORDERMASTER_DESC.ORDER_ITEMID = ITEMMASTER.item_id ", " AND ISNULL(ITEMMASTER.ITEM_NAME,'')='" & CMBITEMCODE.Text & "'  AND  ORDERMASTER_DESC.ORDER_YEARID = " & YearId)
+            If DTTCS.Rows.Count > 0 Then
+                CMBSHADECARD.Text = "No"
+                CMBMULTIUPS.Text = "No"
+            Else
+                CMBSHADECARD.Text = "Yes"
+                CMBMULTIUPS.Text = "Yes"
+            End If
 
+        End If
+    End Sub
 End Class
