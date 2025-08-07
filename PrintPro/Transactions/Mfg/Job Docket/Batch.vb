@@ -131,6 +131,10 @@ Public Class Batch
         TXTPRINTBELOWAREA.Clear()
         TXTPRINTREGSHEETS.Clear()
 
+        TXTPRINTINGSHIFT1.Clear()
+        TXTPRINTINGSHIFT2.Clear()
+        TXTPRINTINGSHIFT3.Clear()
+
         '' PROCESS SORTING 
         TXTSORTINGAREANO.Clear()
         TXTSORTTABLECLR.Clear()
@@ -165,6 +169,12 @@ Public Class Batch
         TXTFOLDMACHINEAREA.Clear()
         TXTFOLDBELOWAREA.Clear()
         TXTFOLDREJSHEETS.Clear()
+
+        TXTFOLDSHIFT1.Clear()
+        TXTFOLDSHIFT2.Clear()
+        TXTFOLDSHIFT3.Clear()
+
+
 
         ''PROCESS PACKING
         txtpackingname.Clear()
@@ -349,6 +359,14 @@ Public Class Batch
                     TXTBOXREQ.Text = Val(DR("BOXREQ"))
                     TXTTRAYREQ.Text = Val(DR("TRAYREQ"))
 
+                    TXTTRAYREQ.Text = Val(DR("PRINTINGSHIFT1"))
+                    TXTTRAYREQ.Text = Val(DR("PRINTINGSHIFT2"))
+                    TXTTRAYREQ.Text = Val(DR("PRINTINGSHIFT3"))
+                    TXTTRAYREQ.Text = Val(DR("FOLDSHIFT1"))
+                    TXTTRAYREQ.Text = Val(DR("FOLDSHIFT2"))
+                    TXTTRAYREQ.Text = Val(DR("FOLDSHIFT3"))
+
+
 
                     If Convert.ToBoolean(DR("DONE")) = True Then
                         lbllocked.Visible = True
@@ -484,6 +502,14 @@ Public Class Batch
             ALPARAVAL.Add(TXTORDERNO.Text.Trim)
             ALPARAVAL.Add(TXTORDERSRNO.Text.Trim)
             ALPARAVAL.Add(TXTORDERTYPE.Text.Trim)
+
+            ALPARAVAL.Add(TXTPRINTINGSHIFT1.Text.Trim)
+            ALPARAVAL.Add(TXTPRINTINGSHIFT2.Text.Trim)
+            ALPARAVAL.Add(TXTPRINTINGSHIFT3.Text.Trim)
+            ALPARAVAL.Add(TXTFOLDSHIFT1.Text.Trim)
+            ALPARAVAL.Add(TXTFOLDSHIFT2.Text.Trim)
+            ALPARAVAL.Add(TXTFOLDSHIFT3.Text.Trim)
+
 
 
 
@@ -1518,6 +1544,15 @@ LINE1:
                     'txttestval.Visible = True
                     'Call ERRORVALID()
 
+                    Label159.Visible = True
+                    Label160.Visible = True
+                    Label161.Visible = True
+                    TXTPRINTINGSHIFT1.Visible = True
+                    TXTPRINTINGSHIFT2.Visible = True
+                    TXTPRINTINGSHIFT3.Visible = True
+
+
+
                 Case 4
                     lblprocess.Text = "LEAFLET SORTING"
                     tempprocessname = "LEAFLET SORTING"
@@ -1773,7 +1808,16 @@ LINE1:
                     'txtgrade.Visible = True
                     'LBLTEST.Visible = True
                     'txttestval.Visible = True
-                  '  Call ERRORVALID()
+                    '  Call ERRORVALID()
+
+
+                    Label164.Visible = True
+                    Label163.Visible = True
+                    Label162.Visible = True
+                    TXTFOLDSHIFT1.Visible = True
+                    TXTFOLDSHIFT2.Visible = True
+                    TXTFOLDSHIFT3.Visible = True
+
 
                 Case 7
                     lblprocess.Text = "UNFOLDING"
@@ -3396,5 +3440,9 @@ LINE1:
             End If
 
         End If
+    End Sub
+
+    Private Sub TXTFOLDSHIFT1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TXTFOLDSHIFT1.KeyPress, TXTFOLDSHIFT2.KeyPress, TXTFOLDSHIFT3.KeyPress, TXTPRINTINGSHIFT1.KeyPress, TXTPRINTINGSHIFT2.KeyPress, TXTPRINTINGSHIFT3.KeyPress
+        numdotkeypress(e, sender, Me)
     End Sub
 End Class

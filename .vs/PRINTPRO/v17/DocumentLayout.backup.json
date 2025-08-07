@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\GIT\\PRINTPRO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{793DDDBE-E4D5-40EA-91CB-559D611F7560}|PrintPro\\PRINTPRO.vbproj|d:\\git\\printpro\\printpro\\transactions\\sale\\orders\\order.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{793DDDBE-E4D5-40EA-91CB-559D611F7560}|PrintPro\\PRINTPRO.vbproj|solutionrelative:printpro\\transactions\\sale\\orders\\order.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{793DDDBE-E4D5-40EA-91CB-559D611F7560}|PrintPro\\PRINTPRO.vbproj|d:\\git\\printpro\\printpro\\transactions\\mfg\\job docket\\batch.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{793DDDBE-E4D5-40EA-91CB-559D611F7560}|PrintPro\\PRINTPRO.vbproj|solutionrelative:printpro\\transactions\\mfg\\job docket\\batch.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{793DDDBE-E4D5-40EA-91CB-559D611F7560}|PrintPro\\PRINTPRO.vbproj|d:\\git\\printpro\\printpro\\transactions\\sale\\orders\\order.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{793DDDBE-E4D5-40EA-91CB-559D611F7560}|PrintPro\\PRINTPRO.vbproj|solutionrelative:printpro\\transactions\\sale\\orders\\order.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{793DDDBE-E4D5-40EA-91CB-559D611F7560}|PrintPro\\PRINTPRO.vbproj|d:\\git\\printpro\\printpro\\transactions\\mfg\\job docket\\batch.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{793DDDBE-E4D5-40EA-91CB-559D611F7560}|PrintPro\\PRINTPRO.vbproj|solutionrelative:printpro\\transactions\\mfg\\job docket\\batch.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,26 +27,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Order.vb",
-              "DocumentMoniker": "D:\\GIT\\PRINTPRO\\PrintPro\\Transactions\\Sale\\Orders\\Order.vb",
-              "RelativeDocumentMoniker": "PrintPro\\Transactions\\Sale\\Orders\\Order.vb",
-              "ToolTip": "D:\\GIT\\PRINTPRO\\PrintPro\\Transactions\\Sale\\Orders\\Order.vb*",
-              "RelativeToolTip": "PrintPro\\Transactions\\Sale\\Orders\\Order.vb*",
-              "ViewState": "AgIAACEFAAAAAAAAAAAYwD8FAAASAAAAAAAAAA==",
+              "Title": "Batch.vb",
+              "DocumentMoniker": "D:\\GIT\\PRINTPRO\\PrintPro\\Transactions\\Mfg\\Job Docket\\Batch.vb",
+              "RelativeDocumentMoniker": "PrintPro\\Transactions\\Mfg\\Job Docket\\Batch.vb",
+              "ToolTip": "D:\\GIT\\PRINTPRO\\PrintPro\\Transactions\\Mfg\\Job Docket\\Batch.vb",
+              "RelativeToolTip": "PrintPro\\Transactions\\Mfg\\Job Docket\\Batch.vb",
+              "ViewState": "AgIAAOAGAAAAAAAAAAAWwAMHAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-08-07T09:57:45.999Z",
+              "WhenOpened": "2025-08-07T13:02:44.942Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Order.vb [Design]",
-              "DocumentMoniker": "D:\\GIT\\PRINTPRO\\PrintPro\\Transactions\\Sale\\Orders\\Order.vb",
-              "RelativeDocumentMoniker": "PrintPro\\Transactions\\Sale\\Orders\\Order.vb",
-              "ToolTip": "D:\\GIT\\PRINTPRO\\PrintPro\\Transactions\\Sale\\Orders\\Order.vb [Design]*",
-              "RelativeToolTip": "PrintPro\\Transactions\\Sale\\Orders\\Order.vb [Design]*",
+              "Title": "Batch.vb [Design]",
+              "DocumentMoniker": "D:\\GIT\\PRINTPRO\\PrintPro\\Transactions\\Mfg\\Job Docket\\Batch.vb",
+              "RelativeDocumentMoniker": "PrintPro\\Transactions\\Mfg\\Job Docket\\Batch.vb",
+              "ToolTip": "D:\\GIT\\PRINTPRO\\PrintPro\\Transactions\\Mfg\\Job Docket\\Batch.vb [Design]",
+              "RelativeToolTip": "PrintPro\\Transactions\\Mfg\\Job Docket\\Batch.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-08-07T09:43:56.427Z",
+              "WhenOpened": "2025-08-07T10:46:17.764Z",
               "EditorCaption": " [Design]"
             }
           ]

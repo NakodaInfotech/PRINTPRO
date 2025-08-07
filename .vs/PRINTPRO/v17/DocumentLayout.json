@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\GIT\\PRINTPRO\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{793DDDBE-E4D5-40EA-91CB-559D611F7560}|PrintPro\\PRINTPRO.vbproj|d:\\git\\printpro\\printpro\\transactions\\mfg\\job docket\\batch.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{793DDDBE-E4D5-40EA-91CB-559D611F7560}|PrintPro\\PRINTPRO.vbproj|solutionrelative:printpro\\transactions\\mfg\\job docket\\batch.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,23 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Batch.vb [Design]",
-              "DocumentMoniker": "D:\\GIT\\PRINTPRO\\PrintPro\\Transactions\\Mfg\\Job Docket\\Batch.vb",
-              "RelativeDocumentMoniker": "PrintPro\\Transactions\\Mfg\\Job Docket\\Batch.vb",
-              "ToolTip": "D:\\GIT\\PRINTPRO\\PrintPro\\Transactions\\Mfg\\Job Docket\\Batch.vb [Design]",
-              "RelativeToolTip": "PrintPro\\Transactions\\Mfg\\Job Docket\\Batch.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-08-07T10:46:17.764Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -122,6 +122,19 @@ Public Class ClsBatch
                 .Add(New SqlClient.SqlParameter("@TRAYREQ", alParaval(I)))
                 I = I + 1
 
+                .Add(New SqlClient.SqlParameter("@PRINTINGSHIFT1", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@PRINTINGSHIFT2", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@PRINTINGSHIFT3", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@FOLDSHIFT1", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@FOLDSHIFT2", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@FOLDSHIFT3", alParaval(I)))
+                I = I + 1
+
 
                 ''GRID PARAMETER
                 .Add(New SqlClient.SqlParameter("@PROCESS", alParaval(I)))
@@ -462,6 +475,19 @@ Public Class ClsBatch
                 .Add(New SqlClient.SqlParameter("@BOXREQ", alParaval(I)))
                 I = I + 1
                 .Add(New SqlClient.SqlParameter("@TRAYREQ", alParaval(I)))
+                I = I + 1
+
+                .Add(New SqlClient.SqlParameter("@PRINTINGSHIFT1", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@PRINTINGSHIFT2", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@PRINTINGSHIFT3", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@FOLDSHIFT1", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@FOLDSHIFT2", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@FOLDSHIFT3", alParaval(I)))
                 I = I + 1
 
                 ''GRID PARAMETER

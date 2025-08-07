@@ -24,14 +24,14 @@ Partial Class Batch
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Batch))
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BlendPanel1 = New VbPowerPack.BlendPanel()
         Me.Label158 = New System.Windows.Forms.Label()
         Me.TXTTRAYREQ = New System.Windows.Forms.TextBox()
@@ -621,6 +621,12 @@ Partial Class Batch
         Me.Label159 = New System.Windows.Forms.Label()
         Me.Label160 = New System.Windows.Forms.Label()
         Me.Label161 = New System.Windows.Forms.Label()
+        Me.Label162 = New System.Windows.Forms.Label()
+        Me.Label163 = New System.Windows.Forms.Label()
+        Me.Label164 = New System.Windows.Forms.Label()
+        Me.TXTFOLDSHIFT1 = New System.Windows.Forms.TextBox()
+        Me.TXTFOLDSHIFT3 = New System.Windows.Forms.TextBox()
+        Me.TXTFOLDSHIFT2 = New System.Windows.Forms.TextBox()
         Me.BlendPanel1.SuspendLayout
         Me.GROUPFOLDING.SuspendLayout
         Me.GROUPFINAL.SuspendLayout
@@ -633,16 +639,16 @@ Partial Class Batch
         Me.GroupBox3.SuspendLayout
         Me.GroupBox5.SuspendLayout
         Me.GROUPCUTTING.SuspendLayout
-        CType(Me.PBlock, System.ComponentModel.ISupportInitialize).BeginInit
-        Me.TabControl1.SuspendLayout
-        Me.TabPage1.SuspendLayout
-        CType(Me.gridjob, System.ComponentModel.ISupportInitialize).BeginInit
-        Me.TabPage2.SuspendLayout
-        CType(Me.PBSOFTCOPY, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.gridupload, System.ComponentModel.ISupportInitialize).BeginInit
-        Me.ToolStrip1.SuspendLayout
-        CType(Me.EP, System.ComponentModel.ISupportInitialize).BeginInit
-        Me.SuspendLayout
+        CType(Me.PBlock, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabControl1.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
+        CType(Me.gridjob, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage2.SuspendLayout()
+        CType(Me.PBSOFTCOPY, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gridupload, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ToolStrip1.SuspendLayout()
+        CType(Me.EP, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
         '
         'BlendPanel1
         '
@@ -950,6 +956,12 @@ Partial Class Batch
         'GROUPFOLDING
         '
         Me.GROUPFOLDING.BackColor = System.Drawing.Color.Transparent
+        Me.GROUPFOLDING.Controls.Add(Me.Label162)
+        Me.GROUPFOLDING.Controls.Add(Me.Label163)
+        Me.GROUPFOLDING.Controls.Add(Me.Label164)
+        Me.GROUPFOLDING.Controls.Add(Me.TXTFOLDSHIFT1)
+        Me.GROUPFOLDING.Controls.Add(Me.TXTFOLDSHIFT3)
+        Me.GROUPFOLDING.Controls.Add(Me.TXTFOLDSHIFT2)
         Me.GROUPFOLDING.Controls.Add(Me.CheckBox24)
         Me.GROUPFOLDING.Controls.Add(Me.CheckBox23)
         Me.GROUPFOLDING.Controls.Add(Me.CheckBox22)
@@ -1035,7 +1047,7 @@ Partial Class Batch
         'CheckBox24
         '
         Me.CheckBox24.AutoSize = True
-        Me.CheckBox24.Location = New System.Drawing.Point(652, 255)
+        Me.CheckBox24.Location = New System.Drawing.Point(675, 303)
         Me.CheckBox24.Name = "CheckBox24"
         Me.CheckBox24.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox24.TabIndex = 355
@@ -1045,7 +1057,7 @@ Partial Class Batch
         'CheckBox23
         '
         Me.CheckBox23.AutoSize = True
-        Me.CheckBox23.Location = New System.Drawing.Point(652, 226)
+        Me.CheckBox23.Location = New System.Drawing.Point(675, 274)
         Me.CheckBox23.Name = "CheckBox23"
         Me.CheckBox23.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox23.TabIndex = 354
@@ -1055,7 +1067,7 @@ Partial Class Batch
         'CheckBox22
         '
         Me.CheckBox22.AutoSize = True
-        Me.CheckBox22.Location = New System.Drawing.Point(653, 198)
+        Me.CheckBox22.Location = New System.Drawing.Point(676, 246)
         Me.CheckBox22.Name = "CheckBox22"
         Me.CheckBox22.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox22.TabIndex = 353
@@ -1065,7 +1077,7 @@ Partial Class Batch
         'CheckBox21
         '
         Me.CheckBox21.AutoSize = True
-        Me.CheckBox21.Location = New System.Drawing.Point(653, 165)
+        Me.CheckBox21.Location = New System.Drawing.Point(676, 213)
         Me.CheckBox21.Name = "CheckBox21"
         Me.CheckBox21.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox21.TabIndex = 352
@@ -1075,7 +1087,7 @@ Partial Class Batch
         'CheckBox20
         '
         Me.CheckBox20.AutoSize = True
-        Me.CheckBox20.Location = New System.Drawing.Point(653, 140)
+        Me.CheckBox20.Location = New System.Drawing.Point(676, 188)
         Me.CheckBox20.Name = "CheckBox20"
         Me.CheckBox20.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox20.TabIndex = 351
@@ -1085,7 +1097,7 @@ Partial Class Batch
         'CheckBox19
         '
         Me.CheckBox19.AutoSize = True
-        Me.CheckBox19.Location = New System.Drawing.Point(653, 112)
+        Me.CheckBox19.Location = New System.Drawing.Point(676, 160)
         Me.CheckBox19.Name = "CheckBox19"
         Me.CheckBox19.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox19.TabIndex = 350
@@ -1095,7 +1107,7 @@ Partial Class Batch
         'CheckBox18
         '
         Me.CheckBox18.AutoSize = True
-        Me.CheckBox18.Location = New System.Drawing.Point(652, 79)
+        Me.CheckBox18.Location = New System.Drawing.Point(675, 127)
         Me.CheckBox18.Name = "CheckBox18"
         Me.CheckBox18.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox18.TabIndex = 349
@@ -1105,7 +1117,7 @@ Partial Class Batch
         'CheckBox17
         '
         Me.CheckBox17.AutoSize = True
-        Me.CheckBox17.Location = New System.Drawing.Point(653, 53)
+        Me.CheckBox17.Location = New System.Drawing.Point(676, 101)
         Me.CheckBox17.Name = "CheckBox17"
         Me.CheckBox17.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox17.TabIndex = 348
@@ -1115,7 +1127,7 @@ Partial Class Batch
         'CheckBox16
         '
         Me.CheckBox16.AutoSize = True
-        Me.CheckBox16.Location = New System.Drawing.Point(653, 22)
+        Me.CheckBox16.Location = New System.Drawing.Point(676, 70)
         Me.CheckBox16.Name = "CheckBox16"
         Me.CheckBox16.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox16.TabIndex = 347
@@ -1203,7 +1215,7 @@ Partial Class Batch
         Me.Label142.BackColor = System.Drawing.Color.Transparent
         Me.Label142.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label142.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label142.Location = New System.Drawing.Point(489, 255)
+        Me.Label142.Location = New System.Drawing.Point(512, 303)
         Me.Label142.Name = "Label142"
         Me.Label142.Size = New System.Drawing.Size(158, 15)
         Me.Label142.TabIndex = 258
@@ -1214,7 +1226,7 @@ Partial Class Batch
         '
         Me.TXTFOLDBARCODECAM.BackColor = System.Drawing.SystemColors.Window
         Me.TXTFOLDBARCODECAM.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTFOLDBARCODECAM.Location = New System.Drawing.Point(652, 251)
+        Me.TXTFOLDBARCODECAM.Location = New System.Drawing.Point(675, 299)
         Me.TXTFOLDBARCODECAM.MaxLength = 100
         Me.TXTFOLDBARCODECAM.Name = "TXTFOLDBARCODECAM"
         Me.TXTFOLDBARCODECAM.Size = New System.Drawing.Size(66, 23)
@@ -1226,7 +1238,7 @@ Partial Class Batch
         Me.Label141.BackColor = System.Drawing.Color.Transparent
         Me.Label141.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label141.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label141.Location = New System.Drawing.Point(504, 226)
+        Me.Label141.Location = New System.Drawing.Point(527, 274)
         Me.Label141.Name = "Label141"
         Me.Label141.Size = New System.Drawing.Size(143, 15)
         Me.Label141.TabIndex = 256
@@ -1237,7 +1249,7 @@ Partial Class Batch
         '
         Me.TXTFOLDALLTRAYEMPTY.BackColor = System.Drawing.SystemColors.Window
         Me.TXTFOLDALLTRAYEMPTY.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTFOLDALLTRAYEMPTY.Location = New System.Drawing.Point(652, 222)
+        Me.TXTFOLDALLTRAYEMPTY.Location = New System.Drawing.Point(675, 270)
         Me.TXTFOLDALLTRAYEMPTY.MaxLength = 100
         Me.TXTFOLDALLTRAYEMPTY.Name = "TXTFOLDALLTRAYEMPTY"
         Me.TXTFOLDALLTRAYEMPTY.Size = New System.Drawing.Size(66, 23)
@@ -1249,7 +1261,7 @@ Partial Class Batch
         Me.Label140.BackColor = System.Drawing.Color.Transparent
         Me.Label140.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label140.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label140.Location = New System.Drawing.Point(534, 168)
+        Me.Label140.Location = New System.Drawing.Point(557, 216)
         Me.Label140.Name = "Label140"
         Me.Label140.Size = New System.Drawing.Size(113, 15)
         Me.Label140.TabIndex = 254
@@ -1260,7 +1272,7 @@ Partial Class Batch
         '
         Me.TXTFOLDREMOVEJOBDOCKET.BackColor = System.Drawing.SystemColors.Window
         Me.TXTFOLDREMOVEJOBDOCKET.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTFOLDREMOVEJOBDOCKET.Location = New System.Drawing.Point(652, 164)
+        Me.TXTFOLDREMOVEJOBDOCKET.Location = New System.Drawing.Point(675, 212)
         Me.TXTFOLDREMOVEJOBDOCKET.MaxLength = 100
         Me.TXTFOLDREMOVEJOBDOCKET.Name = "TXTFOLDREMOVEJOBDOCKET"
         Me.TXTFOLDREMOVEJOBDOCKET.Size = New System.Drawing.Size(66, 23)
@@ -1272,7 +1284,7 @@ Partial Class Batch
         Me.Label90.BackColor = System.Drawing.Color.Transparent
         Me.Label90.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label90.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label90.Location = New System.Drawing.Point(515, 197)
+        Me.Label90.Location = New System.Drawing.Point(538, 245)
         Me.Label90.Name = "Label90"
         Me.Label90.Size = New System.Drawing.Size(132, 15)
         Me.Label90.TabIndex = 229
@@ -1292,7 +1304,7 @@ Partial Class Batch
         '
         Me.TXTFOLDCROSSUNIT.BackColor = System.Drawing.SystemColors.Window
         Me.TXTFOLDCROSSUNIT.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTFOLDCROSSUNIT.Location = New System.Drawing.Point(652, 77)
+        Me.TXTFOLDCROSSUNIT.Location = New System.Drawing.Point(675, 125)
         Me.TXTFOLDCROSSUNIT.MaxLength = 100
         Me.TXTFOLDCROSSUNIT.Name = "TXTFOLDCROSSUNIT"
         Me.TXTFOLDCROSSUNIT.Size = New System.Drawing.Size(66, 23)
@@ -1314,7 +1326,7 @@ Partial Class Batch
         '
         Me.TXTFOLDTABLECLR.BackColor = System.Drawing.SystemColors.Window
         Me.TXTFOLDTABLECLR.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTFOLDTABLECLR.Location = New System.Drawing.Point(652, 19)
+        Me.TXTFOLDTABLECLR.Location = New System.Drawing.Point(675, 67)
         Me.TXTFOLDTABLECLR.MaxLength = 100
         Me.TXTFOLDTABLECLR.Name = "TXTFOLDTABLECLR"
         Me.TXTFOLDTABLECLR.Size = New System.Drawing.Size(66, 23)
@@ -1335,7 +1347,7 @@ Partial Class Batch
         Me.Label103.BackColor = System.Drawing.Color.Transparent
         Me.Label103.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label103.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label103.Location = New System.Drawing.Point(538, 81)
+        Me.Label103.Location = New System.Drawing.Point(561, 129)
         Me.Label103.Name = "Label103"
         Me.Label103.Size = New System.Drawing.Size(109, 15)
         Me.Label103.TabIndex = 245
@@ -1360,7 +1372,7 @@ Partial Class Batch
         Me.Label96.BackColor = System.Drawing.Color.Transparent
         Me.Label96.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label96.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label96.Location = New System.Drawing.Point(538, 23)
+        Me.Label96.Location = New System.Drawing.Point(561, 71)
         Me.Label96.Name = "Label96"
         Me.Label96.Size = New System.Drawing.Size(109, 15)
         Me.Label96.TabIndex = 223
@@ -1394,7 +1406,7 @@ Partial Class Batch
         '
         Me.TXTFOLDFEEDERAREA.BackColor = System.Drawing.SystemColors.Window
         Me.TXTFOLDFEEDERAREA.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTFOLDFEEDERAREA.Location = New System.Drawing.Point(652, 48)
+        Me.TXTFOLDFEEDERAREA.Location = New System.Drawing.Point(675, 96)
         Me.TXTFOLDFEEDERAREA.MaxLength = 100
         Me.TXTFOLDFEEDERAREA.Name = "TXTFOLDFEEDERAREA"
         Me.TXTFOLDFEEDERAREA.Size = New System.Drawing.Size(66, 23)
@@ -1418,7 +1430,7 @@ Partial Class Batch
         Me.Label104.BackColor = System.Drawing.Color.Transparent
         Me.Label104.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label104.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label104.Location = New System.Drawing.Point(544, 52)
+        Me.Label104.Location = New System.Drawing.Point(567, 100)
         Me.Label104.Name = "Label104"
         Me.Label104.Size = New System.Drawing.Size(103, 15)
         Me.Label104.TabIndex = 243
@@ -1431,7 +1443,7 @@ Partial Class Batch
         Me.Label92.BackColor = System.Drawing.Color.Transparent
         Me.Label92.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label92.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label92.Location = New System.Drawing.Point(544, 110)
+        Me.Label92.Location = New System.Drawing.Point(567, 158)
         Me.Label92.Name = "Label92"
         Me.Label92.Size = New System.Drawing.Size(103, 15)
         Me.Label92.TabIndex = 233
@@ -1477,7 +1489,7 @@ Partial Class Batch
         '
         Me.TXTFOLDREJSHEETS.BackColor = System.Drawing.SystemColors.Window
         Me.TXTFOLDREJSHEETS.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTFOLDREJSHEETS.Location = New System.Drawing.Point(652, 193)
+        Me.TXTFOLDREJSHEETS.Location = New System.Drawing.Point(675, 241)
         Me.TXTFOLDREJSHEETS.MaxLength = 100
         Me.TXTFOLDREJSHEETS.Name = "TXTFOLDREJSHEETS"
         Me.TXTFOLDREJSHEETS.Size = New System.Drawing.Size(66, 23)
@@ -1501,7 +1513,7 @@ Partial Class Batch
         Me.Label100.BackColor = System.Drawing.Color.Transparent
         Me.Label100.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label100.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label100.Location = New System.Drawing.Point(534, 139)
+        Me.Label100.Location = New System.Drawing.Point(557, 187)
         Me.Label100.Name = "Label100"
         Me.Label100.Size = New System.Drawing.Size(113, 15)
         Me.Label100.TabIndex = 239
@@ -1526,7 +1538,7 @@ Partial Class Batch
         '
         Me.TXTFOLDMACHINEAREA.BackColor = System.Drawing.SystemColors.Window
         Me.TXTFOLDMACHINEAREA.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTFOLDMACHINEAREA.Location = New System.Drawing.Point(652, 106)
+        Me.TXTFOLDMACHINEAREA.Location = New System.Drawing.Point(675, 154)
         Me.TXTFOLDMACHINEAREA.MaxLength = 100
         Me.TXTFOLDMACHINEAREA.Name = "TXTFOLDMACHINEAREA"
         Me.TXTFOLDMACHINEAREA.Size = New System.Drawing.Size(66, 23)
@@ -1550,7 +1562,7 @@ Partial Class Batch
         '
         Me.TXTFOLDTAPPINGUNIT.BackColor = System.Drawing.SystemColors.Window
         Me.TXTFOLDTAPPINGUNIT.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTFOLDTAPPINGUNIT.Location = New System.Drawing.Point(652, 135)
+        Me.TXTFOLDTAPPINGUNIT.Location = New System.Drawing.Point(675, 183)
         Me.TXTFOLDTAPPINGUNIT.MaxLength = 100
         Me.TXTFOLDTAPPINGUNIT.Name = "TXTFOLDTAPPINGUNIT"
         Me.TXTFOLDTAPPINGUNIT.Size = New System.Drawing.Size(66, 23)
@@ -6067,27 +6079,27 @@ Partial Class Batch
         Me.gridjob.AllowUserToDeleteRows = False
         Me.gridjob.AllowUserToResizeColumns = False
         Me.gridjob.AllowUserToResizeRows = False
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.gridjob.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.gridjob.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.gridjob.BackgroundColor = System.Drawing.Color.White
         Me.gridjob.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.gridjob.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        Me.gridjob.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        Me.gridjob.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.gridjob.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.gridjob.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Gprocess, Me.Gsrno, Me.Gpcolor, Me.GNOOFPLATE, Me.GPLATETYPE, Me.GPLATESIZE, Me.GPLATEQC, Me.GPLATEREMARKS, Me.GPLATEINTIME, Me.GPLATEOUTTIME, Me.Gplatecheckedby, Me.Gcodecheckedby, Me.Gupscheckedby, Me.GCorrectionappby, Me.GPlatemadeby, Me.Gplatemadedate, Me.Gplatedestroyedby, Me.Gplatedestroyeddate, Me.Gplateremadeby, Me.Gplateremadedate, Me.GPLTCHKBY, Me.Gprintingname, Me.Gsheetsgiven, Me.Ggivendate1, Me.Gbalancesheets, Me.Greturneddate, Me.Gsheetsdestroyed, Me.GMACHINENO, Me.GTABLECLEAR, Me.GMACHINEPTFCLR, Me.GDUSTBINCLEAR, Me.GMACHINESURRAREACLR, Me.GAREABELOWMACHINECLR, Me.GALLREJECTEDSHEETSDESTROYED, Me.GUNFOLDREMOVEJOBDOCKET, Me.GUNFOLDALLTRAY, Me.GUNFOLDSORTINGBY, Me.GUNFOLDCOUNTING, Me.GUNFOLDPACKETBY, Me.GUNFOLDLABELLEDBY, Me.GUNFOLDSAMPLEAPPBY, Me.GUNFOLDSHEETGIVEN, Me.GUNFOLDBALANCESHEET, Me.GUNFOLDDESTROYEDSHEET, Me.GUNFOLDGIVENDATE, Me.GUNFOLDREMARKS, Me.GUNFOLDINTIME, Me.GUNFOLDOUTTIME, Me.GPAPERGRNNO, Me.GPAPERTYPE, Me.GPAPERREMARKS, Me.GPAPERINTIME, Me.GPAPEROUTTIME, Me.GPAPERGSMQC, Me.GPAPERQUALITYQC, Me.GCUTJOBSHEET, Me.GCUTLEAFLETSIZE, Me.GSORTFLOORAREA, Me.GSORTPREJOBSHEETS, Me.GSORTREMARKS, Me.GSORTINTIME, Me.GSORTOUTTIME, Me.GPLATEAREREMOVED, Me.GINKPOTAREEMPTIEDOUT, Me.GPRINTEDSHEETSREMOVED, Me.GPOSITIVEREMOVED, Me.GNEGATIVEREMOVED, Me.GAPPSHADECARDREMOVED, Me.GAPPSAMPLEREMOVED, Me.GREGSHEETSREMOVED, Me.GFEDERAREACLR, Me.GDELIVERAREACLR, Me.GPRINTTYPE, Me.GPRINTREMARKS, Me.GPRINTINTIME, Me.GPRINTOUTTIME, Me.GPRINTVARNISH, Me.GPRINTPERFORATION, Me.GPRINTTEXTMATTER, Me.GPRINTSIZE, Me.GPRINTJOBREG, Me.GPRINTCOLOR, Me.GCROSSUNITAREACLR, Me.G1STKNIFEAREACLR, Me.G2NDKNIFEAREACLR, Me.GTAPPINGUNITAREACLR, Me.GSTACKERAREACLR, Me.GFOLDBUNDLEDBY, Me.GFOLDPACKEDBY, Me.GFOLDLABELLEDBY, Me.GFOLDREMOVEDOCKET, Me.GFOLDALLTRAYS, Me.GFOLDBARCODECAMERA, Me.GFOLDREMARKS, Me.GFOLDINTIME, Me.GFOLDOUTTIME, Me.Gsample, Me.Gtotalpackets, Me.Gtotalshippers, Me.Gpacketsize, Me.Gshortqty, Me.GSupervisor})
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.gridjob.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.gridjob.DefaultCellStyle = DataGridViewCellStyle3
         Me.gridjob.Dock = System.Windows.Forms.DockStyle.Fill
         Me.gridjob.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.gridjob.GridColor = System.Drawing.SystemColors.Control
@@ -6098,8 +6110,8 @@ Partial Class Batch
         Me.gridjob.RowHeadersVisible = False
         Me.gridjob.RowHeadersWidth = 30
         Me.gridjob.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Black
-        Me.gridjob.RowsDefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Black
+        Me.gridjob.RowsDefaultCellStyle = DataGridViewCellStyle4
         Me.gridjob.RowTemplate.Height = 20
         Me.gridjob.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.gridjob.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
@@ -6852,29 +6864,29 @@ Partial Class Batch
         Me.gridupload.AllowUserToDeleteRows = False
         Me.gridupload.AllowUserToResizeColumns = False
         Me.gridupload.AllowUserToResizeRows = False
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(248, Byte), Integer))
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Black
-        Me.gridupload.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(248, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Black
+        Me.gridupload.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
         Me.gridupload.BackgroundColor = System.Drawing.Color.White
         Me.gridupload.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.gridupload.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        Me.gridupload.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        Me.gridupload.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.gridupload.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.gridupload.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.GUSRNO, Me.GUREMARKS, Me.GUNAME, Me.GUIMGPATH})
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.gridupload.DefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.gridupload.DefaultCellStyle = DataGridViewCellStyle7
         Me.gridupload.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.gridupload.GridColor = System.Drawing.SystemColors.Control
         Me.gridupload.Location = New System.Drawing.Point(7, 29)
@@ -6884,9 +6896,9 @@ Partial Class Batch
         Me.gridupload.RowHeadersVisible = False
         Me.gridupload.RowHeadersWidth = 30
         Me.gridupload.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White
-        Me.gridupload.RowsDefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White
+        Me.gridupload.RowsDefaultCellStyle = DataGridViewCellStyle8
         Me.gridupload.RowTemplate.Height = 20
         Me.gridupload.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.gridupload.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
@@ -7337,6 +7349,81 @@ Partial Class Batch
         Me.Label161.Text = "Shift-3"
         Me.Label161.Visible = False
         '
+        'Label162
+        '
+        Me.Label162.AutoSize = True
+        Me.Label162.BackColor = System.Drawing.Color.Transparent
+        Me.Label162.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label162.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label162.Location = New System.Drawing.Point(629, 45)
+        Me.Label162.Name = "Label162"
+        Me.Label162.Size = New System.Drawing.Size(43, 15)
+        Me.Label162.TabIndex = 1162
+        Me.Label162.Text = "Shift-3"
+        Me.Label162.Visible = False
+        '
+        'Label163
+        '
+        Me.Label163.AutoSize = True
+        Me.Label163.BackColor = System.Drawing.Color.Transparent
+        Me.Label163.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label163.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label163.Location = New System.Drawing.Point(630, 18)
+        Me.Label163.Name = "Label163"
+        Me.Label163.Size = New System.Drawing.Size(43, 15)
+        Me.Label163.TabIndex = 1161
+        Me.Label163.Text = "Shift-2"
+        Me.Label163.Visible = False
+        '
+        'Label164
+        '
+        Me.Label164.AutoSize = True
+        Me.Label164.BackColor = System.Drawing.Color.Transparent
+        Me.Label164.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label164.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label164.Location = New System.Drawing.Point(522, 19)
+        Me.Label164.Name = "Label164"
+        Me.Label164.Size = New System.Drawing.Size(43, 15)
+        Me.Label164.TabIndex = 1160
+        Me.Label164.Text = "Shift-1"
+        Me.Label164.Visible = False
+        '
+        'TXTFOLDSHIFT1
+        '
+        Me.TXTFOLDSHIFT1.BackColor = System.Drawing.SystemColors.Window
+        Me.TXTFOLDSHIFT1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TXTFOLDSHIFT1.Location = New System.Drawing.Point(566, 14)
+        Me.TXTFOLDSHIFT1.MaxLength = 100
+        Me.TXTFOLDSHIFT1.Name = "TXTFOLDSHIFT1"
+        Me.TXTFOLDSHIFT1.Size = New System.Drawing.Size(62, 23)
+        Me.TXTFOLDSHIFT1.TabIndex = 1157
+        Me.TXTFOLDSHIFT1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.TXTFOLDSHIFT1.Visible = False
+        '
+        'TXTFOLDSHIFT3
+        '
+        Me.TXTFOLDSHIFT3.BackColor = System.Drawing.SystemColors.Window
+        Me.TXTFOLDSHIFT3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TXTFOLDSHIFT3.Location = New System.Drawing.Point(675, 41)
+        Me.TXTFOLDSHIFT3.MaxLength = 100
+        Me.TXTFOLDSHIFT3.Name = "TXTFOLDSHIFT3"
+        Me.TXTFOLDSHIFT3.Size = New System.Drawing.Size(62, 23)
+        Me.TXTFOLDSHIFT3.TabIndex = 1159
+        Me.TXTFOLDSHIFT3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.TXTFOLDSHIFT3.Visible = False
+        '
+        'TXTFOLDSHIFT2
+        '
+        Me.TXTFOLDSHIFT2.BackColor = System.Drawing.SystemColors.Window
+        Me.TXTFOLDSHIFT2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TXTFOLDSHIFT2.Location = New System.Drawing.Point(675, 13)
+        Me.TXTFOLDSHIFT2.MaxLength = 100
+        Me.TXTFOLDSHIFT2.Name = "TXTFOLDSHIFT2"
+        Me.TXTFOLDSHIFT2.Size = New System.Drawing.Size(62, 23)
+        Me.TXTFOLDSHIFT2.TabIndex = 1158
+        Me.TXTFOLDSHIFT2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.TXTFOLDSHIFT2.Visible = False
+        '
         'Batch
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -7349,40 +7436,40 @@ Partial Class Batch
         Me.Text = "Batch Creation"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.BlendPanel1.ResumeLayout(False)
-        Me.BlendPanel1.PerformLayout
+        Me.BlendPanel1.PerformLayout()
         Me.GROUPFOLDING.ResumeLayout(False)
-        Me.GROUPFOLDING.PerformLayout
+        Me.GROUPFOLDING.PerformLayout()
         Me.GROUPFINAL.ResumeLayout(False)
-        Me.GROUPFINAL.PerformLayout
+        Me.GROUPFINAL.PerformLayout()
         Me.GROUPUNFOLD.ResumeLayout(False)
-        Me.GROUPUNFOLD.PerformLayout
+        Me.GROUPUNFOLD.PerformLayout()
         Me.GROUPSORTING.ResumeLayout(False)
-        Me.GROUPSORTING.PerformLayout
+        Me.GROUPSORTING.PerformLayout()
         Me.GROUPPRINT.ResumeLayout(False)
-        Me.GROUPPRINT.PerformLayout
+        Me.GROUPPRINT.PerformLayout()
         Me.GROUPPOSITIVE.ResumeLayout(False)
-        Me.GROUPPOSITIVE.PerformLayout
+        Me.GROUPPOSITIVE.PerformLayout()
         Me.GROUPPLATE.ResumeLayout(False)
-        Me.GROUPPLATE.PerformLayout
+        Me.GROUPPLATE.PerformLayout()
         Me.GROUPPACKING.ResumeLayout(False)
-        Me.GROUPPACKING.PerformLayout
+        Me.GROUPPACKING.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout
+        Me.GroupBox3.PerformLayout()
         Me.GroupBox5.ResumeLayout(False)
-        Me.GroupBox5.PerformLayout
+        Me.GroupBox5.PerformLayout()
         Me.GROUPCUTTING.ResumeLayout(False)
-        Me.GROUPCUTTING.PerformLayout
-        CType(Me.PBlock, System.ComponentModel.ISupportInitialize).EndInit
+        Me.GROUPCUTTING.PerformLayout()
+        CType(Me.PBlock, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
-        CType(Me.gridjob, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.gridjob, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
-        Me.TabPage2.PerformLayout
-        CType(Me.PBSOFTCOPY, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.gridupload, System.ComponentModel.ISupportInitialize).EndInit
+        Me.TabPage2.PerformLayout()
+        CType(Me.PBSOFTCOPY, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridupload, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip1.ResumeLayout(False)
-        Me.ToolStrip1.PerformLayout
-        CType(Me.EP, System.ComponentModel.ISupportInitialize).EndInit
+        Me.ToolStrip1.PerformLayout()
+        CType(Me.EP, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -7977,4 +8064,10 @@ Partial Class Batch
     Friend WithEvents TXTPRINTINGSHIFT2 As TextBox
     Friend WithEvents TXTPRINTINGSHIFT3 As TextBox
     Friend WithEvents Label161 As Label
+    Friend WithEvents Label162 As Label
+    Friend WithEvents Label163 As Label
+    Friend WithEvents Label164 As Label
+    Friend WithEvents TXTFOLDSHIFT1 As TextBox
+    Friend WithEvents TXTFOLDSHIFT3 As TextBox
+    Friend WithEvents TXTFOLDSHIFT2 As TextBox
 End Class
