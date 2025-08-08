@@ -359,12 +359,12 @@ Public Class Batch
                     TXTBOXREQ.Text = Val(DR("BOXREQ"))
                     TXTTRAYREQ.Text = Val(DR("TRAYREQ"))
 
-                    TXTTRAYREQ.Text = Val(DR("PRINTINGSHIFT1"))
-                    TXTTRAYREQ.Text = Val(DR("PRINTINGSHIFT2"))
-                    TXTTRAYREQ.Text = Val(DR("PRINTINGSHIFT3"))
-                    TXTTRAYREQ.Text = Val(DR("FOLDSHIFT1"))
-                    TXTTRAYREQ.Text = Val(DR("FOLDSHIFT2"))
-                    TXTTRAYREQ.Text = Val(DR("FOLDSHIFT3"))
+                    TXTPRINTINGSHIFT1.Text = Val(DR("PRINTINGSHIFT1"))
+                    TXTPRINTINGSHIFT2.Text = Val(DR("PRINTINGSHIFT2"))
+                    TXTPRINTINGSHIFT3.Text = Val(DR("PRINTINGSHIFT3"))
+                    TXTFOLDSHIFT1.Text = Val(DR("FOLDSHIFT1"))
+                    TXTFOLDSHIFT2.Text = Val(DR("FOLDSHIFT2"))
+                    TXTFOLDSHIFT3.Text = Val(DR("FOLDSHIFT3"))
 
 
 
@@ -503,13 +503,6 @@ Public Class Batch
             ALPARAVAL.Add(TXTORDERSRNO.Text.Trim)
             ALPARAVAL.Add(TXTORDERTYPE.Text.Trim)
 
-            ALPARAVAL.Add(TXTPRINTINGSHIFT1.Text.Trim)
-            ALPARAVAL.Add(TXTPRINTINGSHIFT2.Text.Trim)
-            ALPARAVAL.Add(TXTPRINTINGSHIFT3.Text.Trim)
-            ALPARAVAL.Add(TXTFOLDSHIFT1.Text.Trim)
-            ALPARAVAL.Add(TXTFOLDSHIFT2.Text.Trim)
-            ALPARAVAL.Add(TXTFOLDSHIFT3.Text.Trim)
-
 
 
 
@@ -520,6 +513,14 @@ Public Class Batch
             ALPARAVAL.Add(TXTBOXSIZE.Text.Trim)
             ALPARAVAL.Add(TXTBOXREQ.Text.Trim)
             ALPARAVAL.Add(TXTTRAYREQ.Text.Trim)
+
+            ALPARAVAL.Add(TXTPRINTINGSHIFT1.Text.Trim)
+            ALPARAVAL.Add(TXTPRINTINGSHIFT2.Text.Trim)
+            ALPARAVAL.Add(TXTPRINTINGSHIFT3.Text.Trim)
+            ALPARAVAL.Add(TXTFOLDSHIFT1.Text.Trim)
+            ALPARAVAL.Add(TXTFOLDSHIFT2.Text.Trim)
+            ALPARAVAL.Add(TXTFOLDSHIFT3.Text.Trim)
+
 
 
             ''GRID PARAMETERS
