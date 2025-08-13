@@ -112,7 +112,7 @@ Line1:
 
                 Me.Close()
 
-            ElseIf ClientName = "AMR" Then
+            ElseIf ClientName = "AMR" And FRMSTRING <> "PLATEISSUE" Then
                 If TYPE = "CHALLAN" Then
                     Dim COUNT As Integer = 0
                     For i As Integer = 0 To gridbill.RowCount - 1
@@ -180,36 +180,37 @@ Line1:
                     Next
 
                     Me.Close()
-                End If
-            Else
+                Else
 
-                Dim COUNT As Integer = 0
-                For i As Integer = 0 To gridbill.RowCount - 1
-                    Dim dtrow As DataRow = gridbill.GetDataRow(i)
-                    If Convert.ToBoolean(dtrow("CHK")) = True Then
-                        COUNT = COUNT + 1
+                    Dim COUNT As Integer = 0
+                    For i As Integer = 0 To gridbill.RowCount - 1
+                        Dim dtrow As DataRow = gridbill.GetDataRow(i)
+                        If Convert.ToBoolean(dtrow("CHK")) = True Then
+                            COUNT = COUNT + 1
+                        End If
+                    Next
+
+                    If COUNT > 1 Then
+                        MsgBox("You Can Select Only One Batch")
+                        Exit Sub
                     End If
-                Next
 
-                If COUNT > 1 Then
-                    MsgBox("You Can Select Only One Batch")
-                    Exit Sub
+                    DT.Columns.Add("JOBBATCHNO")
+                    DT.Columns.Add("BATCHNO")
+                    DT.Columns.Add("ITEMCODE")
+                    DT.Columns.Add("ITEMNAME")
+
+                    For i As Integer = 0 To gridbill.RowCount - 1
+                        Dim dtrow As DataRow = gridbill.GetDataRow(i)
+                        If Convert.ToBoolean(dtrow("CHK")) = True Then
+                            DT.Rows.Add(dtrow("JOBBATCHNO"), dtrow("BATCHNO"), dtrow("ITEMCODE"), dtrow("ITEMNAME"))
+                        End If
+                    Next
+
+                    Me.Close()
                 End If
-
-                DT.Columns.Add("JOBBATCHNO")
-                DT.Columns.Add("BATCHNO")
-                DT.Columns.Add("ITEMCODE")
-                DT.Columns.Add("ITEMNAME")
-
-                For i As Integer = 0 To gridbill.RowCount - 1
-                    Dim dtrow As DataRow = gridbill.GetDataRow(i)
-                    If Convert.ToBoolean(dtrow("CHK")) = True Then
-                        DT.Rows.Add(dtrow("JOBBATCHNO"), dtrow("BATCHNO"), dtrow("ITEMCODE"), dtrow("ITEMNAME"))
-                    End If
-                Next
-
-                Me.Close()
             End If
+
 
 
 

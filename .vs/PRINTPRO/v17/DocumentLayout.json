@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\GIT\\PRINTPRO\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{793DDDBE-E4D5-40EA-91CB-559D611F7560}|PrintPro\\PRINTPRO.vbproj|d:\\git\\printpro\\printpro\\transactions\\mfg\\job docket\\selectbatch.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{793DDDBE-E4D5-40EA-91CB-559D611F7560}|PrintPro\\PRINTPRO.vbproj|solutionrelative:printpro\\transactions\\mfg\\job docket\\selectbatch.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{793DDDBE-E4D5-40EA-91CB-559D611F7560}|PrintPro\\PRINTPRO.vbproj|d:\\git\\printpro\\printpro\\transactions\\mfg\\plate mfg\\plateissue.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{793DDDBE-E4D5-40EA-91CB-559D611F7560}|PrintPro\\PRINTPRO.vbproj|solutionrelative:printpro\\transactions\\mfg\\plate mfg\\plateissue.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{793DDDBE-E4D5-40EA-91CB-559D611F7560}|PrintPro\\PRINTPRO.vbproj|d:\\git\\printpro\\printpro\\transactions\\mfg\\plate mfg\\plateissue.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{793DDDBE-E4D5-40EA-91CB-559D611F7560}|PrintPro\\PRINTPRO.vbproj|solutionrelative:printpro\\transactions\\mfg\\plate mfg\\plateissue.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SelectBatch.vb",
+              "DocumentMoniker": "D:\\GIT\\PRINTPRO\\PrintPro\\Transactions\\Mfg\\Job Docket\\SelectBatch.vb",
+              "RelativeDocumentMoniker": "PrintPro\\Transactions\\Mfg\\Job Docket\\SelectBatch.vb",
+              "ToolTip": "D:\\GIT\\PRINTPRO\\PrintPro\\Transactions\\Mfg\\Job Docket\\SelectBatch.vb*",
+              "RelativeToolTip": "PrintPro\\Transactions\\Mfg\\Job Docket\\SelectBatch.vb*",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAqwHMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-08-13T11:01:24.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlateIssue.vb",
+              "DocumentMoniker": "D:\\GIT\\PRINTPRO\\PrintPro\\Transactions\\Mfg\\Plate Mfg\\PlateIssue.vb",
+              "RelativeDocumentMoniker": "PrintPro\\Transactions\\Mfg\\Plate Mfg\\PlateIssue.vb",
+              "ToolTip": "D:\\GIT\\PRINTPRO\\PrintPro\\Transactions\\Mfg\\Plate Mfg\\PlateIssue.vb",
+              "RelativeToolTip": "PrintPro\\Transactions\\Mfg\\Plate Mfg\\PlateIssue.vb",
+              "ViewState": "AgIAAEoCAAAAAAAAAAAtwFsCAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-08-13T11:00:49.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlateIssue.vb [Design]",
+              "DocumentMoniker": "D:\\GIT\\PRINTPRO\\PrintPro\\Transactions\\Mfg\\Plate Mfg\\PlateIssue.vb",
+              "RelativeDocumentMoniker": "PrintPro\\Transactions\\Mfg\\Plate Mfg\\PlateIssue.vb",
+              "ToolTip": "D:\\GIT\\PRINTPRO\\PrintPro\\Transactions\\Mfg\\Plate Mfg\\PlateIssue.vb [Design]",
+              "RelativeToolTip": "PrintPro\\Transactions\\Mfg\\Plate Mfg\\PlateIssue.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-08-13T11:00:44.78Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
